@@ -1,0 +1,64 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/bottomItems"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="40dp">
+
+		<TextView
+			android:id="@+id/textProjectileAngle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:text="0\u00B0" />
+
+
+
+
+		<SeekBar
+			android:id="@+id/seekBarProjectileAngle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textProjectileAngle"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:progress="0"
+			android:max="90" />
+
+		<Button
+			android:id="@+id/buttonNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/seekBarProjectileAngle"
+			android:layout_centerHorizontal="true"
+			android:text="@string/btSubmit" />
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bottomItems"
+		android:layout_marginBottom="40dp">
+
+		<View
+			android:id="@+id/imageTrajectoryLine"
+			android:background="@drawable/rectangle"
+			android:layout_width="80dp"
+			android:layout_height="5dp"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true" />
+
+	</RelativeLayout>
+
+
+</RelativeLayout>

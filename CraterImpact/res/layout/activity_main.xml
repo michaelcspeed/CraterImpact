@@ -1,0 +1,43 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<Spinner
+		android:id="@+id/spinner1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		android:entries="@array/languages" />
+
+	<Button
+		android:id="@+id/button1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/spinner1"
+		android:layout_centerHorizontal="true"
+		android:text="@string/btStart" />
+
+	<ImageView
+		android:id="@+id/imageView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:src="@drawable/ic_launcher"
+		android:layout_margin="40dp" />
+	
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/spinner1"
+		android:layout_above="@+id/spinner1"
+		android:text="@string/lblLanguage" />
+
+</RelativeLayout>

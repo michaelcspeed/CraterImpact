@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Cyfrifiannell Gwrthdrawiad</string>
+<string name="btStart">Dechrau</string>
+<string name="lblTitle">Cyfrifiannell Gwrthdrawiad</string>
+<string name="lblLanguage">Iaith:</string>
+
+
+<string name="lblTranslation">Cyfieithiadau:</string>
+
+
+<string name="cmdHelp">Cymorth </string>
+<string name="inputs">Nodwch y paramedrau</string>
+<string name="result">Canlyniadau cyfrifiad</string>
+
+
+<string name="lblAstDiam">Diamedr yr asteroid</string>
+<string name="lblValue">Gwerth:</string>
+<string name="lblWater">Dŵr</string>
+<string name="lblSedRock">Craig waddodol</string>
+<string name="lblIgRock">Craig igneaidd</string>
+<string name="lblIce">Iâ</string>
+<string name="lblPorRock">Craig fandyllog</string>
+<string name="lblDensRock">Craig drwchus</string>
+<string name="lblIron">Haearn</string>
+
+
+<string name="txtWaterDepth">Dyfnder y dŵr (m) :</string>
+<string name="btSubmit">Cyflwyno</string>
+<string name="lblObVelocity">Cyflymder y gwrthrych</string>
+
+
+<string name="lblSelect">Dewiswch...</string>
+<string name="lblSphinx">Sffincs Giza (20m)</string>
+<string name="lblBen">Big Ben (96m)</string>
+<string name="lblEiffel">Tŵr Eiffel (324m)</string>
+<string name="lblEmpireSt">Adeilad yr Empire State (449m)</string>
+<string name="lblCN">Tŵr CN (553m)</string>
+<string name="lblBurj">Burj Dubai (~800m)</string>
+
+
+<string name="lblImpactVal">Impact Values</string>
+<string name="lblClickMap">Cliciwch y map i nodi’r crater...</string>
+<string name="cvsData">Gweld data</string>
+<string name="cvsSize">Maint y crater</string>
+<string name="cvsDepth">Dyfnder y Crater</string>
+<string name="btBack">Yn ôl</string>
+<string name="btReset">Ailosod</string>
+<string name="lbCrater">Mae’r crater rhy fach i’w weld</string>
+
+
+<string name="htParameter">Paramedr</string>
+<string name="htValue">Gwerth</string>
+
+
+<string name="lblDistance">Pellter o safle’r gwrthdrawiad</string>
+<string name="lblInVals">Input Values</string>
+<string name="pnlResults">Canlyniadau’r cyfrif</string>
+<string name="lblCrDepth">Dyfnder y crater</string>
+<string name="lblLandmark">Dewiswch dirnod:</string>
+<string name="lblImpEnergy">Egni’r gwrthdrawiad</string>
+<string name="lblWhatImpactor">Beth sy’n digwydd i’r gwrthrych sy’n taro?</string>
+<string name="lblFireball">A oes pelen dân?</string>
+
+
+
+
+<string name="lbKE">Egni cinetig</string>
+<string name="lbImE">Egni’r gwrthdrawiad</string>
+<string name="lbImM">Màs</string>
+<string name="lbPjVel">Cyflymder y taflegryn</string>
+<string name="lbPjAng">Ongl y taflegryn</string>
+<string name="lbTgDens">Dwysedd y targed</string>
+<string name="lbPjDens">Dwysedd y taflegryn</string>
+<string name="lbCrDiam">Lled y crater</string>
+<string name="lbCrDepth">Dyfnder y crater</string>
+<string name="lbCrThickness">Trwch y deunydd a ddaw allan</string>
+<string name="lbAbBurst">Uchder y rhwyg</string>
+<string name="lbAbBreak">Uchder y ffrwydrad</string>
+<string name="lbAbVel">Cyflymder y gwynt</string>
+<string name="lbAbRichter">Maint richter</string>
+<string name="lbAbAmpl">Osgled pwls sain</string>
+<string name="lbFbRad">Radiws</string>
+<string name="lbFbDuration">Pelydriad thermal ar ei uchaf</string>
+<string name="lbFbExp">Datguddiad</string>
+<string name="lbFbPeaktime">Hyd yr arbelydriad</string>
+<string name="lbNoData">Amherthnasol</string>
+<string name="lbFreq">Pa mor aml?</string>
+
+
+<string name="lbAcknow">Diolchiadau</string>
+<string name="hide">Cuddio</string>
+<string name="lbAuthor">Enw’r awdur:</string>
+<string name="lbBased">Wedi’i seilio ar god gwreiddiol gan:</string>
+
+
+<string name="projectile1">Mae’r taflegryn yn glanio mewn un darn, ar gyflymder o</string>
+<string name="projectile2">Egni yn cael ei golli yn yr atmosffer: </string>
+<string name="projectile3">Mae’r taflegryn yn dechrau chwalu ar uchder o </string>
+<string name="projectile4">Cyflymder darnau o’r taflegryn ar ôl y ffrwydrad yw </string>
+<string name="projectile5">Egni’r ffrwydrad awyr yw </string>
+<string name="projectile6">Mae darnau mawr yn taro’r wyneb, gan greu craterau yma a thraw. Mae angen ystyried sut y daw i’r atmosffer yn fwy gofalus er mwyn amcangyfrif dosbarthiad a maint y darnau meteoritau a rhagweld nifer a maint y craterau a ffurfir.</string>
+<string name="projectile7">Mae’r taflegryn wedi torri wrth gyrraedd y llawr.  Mae’r taflegryn yn taro’r wyneb ar gyflymder o</string>
+
+
+<string name="expos1">Dillad yn mynd ar dân</string>
+<string name="expos2">Rhan helaeth o’r corff wedi dioddef llosgiadau gradd 3</string>
+<string name="expos3">Rhan helaeth o’r corff wedi dioddef llosgiadau gradd 2</string>
+<string name="expos4">Rhan helaeth o’r corff wedi dioddef llosgiadau gradd 1</string>
+<string name="expos5">Papur newydd yn cynnau</string>
+<string name="expos6">Pren haenog ar dân</string>
+<string name="expos7">Coed collddail yn cynnau</string>
+<string name="expos8">Glaswellt yn cynnau </string>
+
+
+<string name="opress1">Bydd adeiladau aml-lawr yn cwympo</string>
+<string name="opress2">Bydd adeiladau aml-lawr yn hollti’n ddifrifol a’r parwydydd yn chwythu i’r llawr</string>
+<string name="opress3">Bydd adeiladau pren yn cwympo bron yn gyfan gwbl</string>
+<string name="opress4">Bydd parwydydd adeiladau pren yn chwythu i’r llawr. Bydd toeau’n cael eu difrodi’n sylweddol</string>
+<string name="opress5">Bydd fframiau dur mewn adeiladau aml-lawr fel swyddfeydd, yn plygu’n sylweddol ac yn dechrau cwympo.</string>
+<string name="opress6">Bydd pontydd bach yn cwympo.</string>
+<string name="opress7">Bydd craffrwymau pontydd yn plygu’n sylweddol</string>
+<string name="opress8">Bydd pontydd ffrâm ddur yn cwympo</string>
+<string name="opress9">Bydd ffenestri gwydr yn torri’n deilchion</string>
+<string name="opress10">Bydd ceir a lorïau wedi’u symud o’u lle a’u hanffurfio, a bydd angen eu trwsio cyn eu defnyddio eto</string>
+<string name="opress11">Bydd ceir a lorïau wedi troi wyneb i waered, a bydd angen eu trwsio’n sylweddol</string>
+<string name="opress12">Dim difrod sylweddol yn sgil y ffrwydrad atmosfferaidd</string>
+<string name="opress13">Hyd at 90% o goed wedi cwympo i’r llawr; y gweddill heb ganghennau na dail</string>
+<string name="opress14">Tua 30% o goed wedi cwympo i’r llawr; y gweddill heb ganghennau na dail</string>
+
+
+<string name="incrater">Rydych chi’n sefyll y tu mewn i’r crater</string>
+
+
+<string name="damage1">Difrod </string>
+<string name="damage2"> o safle’r gwrthdrawiad</string>
+</resources>

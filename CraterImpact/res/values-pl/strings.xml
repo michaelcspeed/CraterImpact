@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Kalkulator zderzenia</string>
+<string name="btStart">Start</string>
+<string name="lblTitle">Kalkulator zderzenia</string>
+<string name="lblLanguage">Język:</string>
+
+
+<string name="lblTranslation">Tłumaczenie:</string>
+
+
+<string name="cmdHelp">Pomoc</string>
+<string name="inputs">Dane wyjściowe</string>
+<string name="result">Wyniki obliczeń</string>
+
+
+<string name="lblAstDiam">Średnica asteroidy</string>
+<string name="lblValue">Wartość:</string>
+<string name="lblWater">Woda</string>
+<string name="lblSedRock">Skały osadowe</string>
+<string name="lblIgRock">Skały magmowe</string>
+<string name="lblIce">Lód</string>
+<string name="lblPorRock">Skały porowate</string>
+<string name="lblDensRock">Skały masywne</string>
+<string name="lblIron">Żelazo</string>
+
+
+<string name="txtWaterDepth">Głębokość wody (m):</string>
+<string name="btSubmit">Wyślij</string>
+<string name="lblObVelocity">Prędkość asteroidy</string>
+
+
+<string name="lblSelect">Wybierz...</string>
+<string name="lblSphinx">Sphinx, Giza (20m)</string>
+<string name="lblBen">Big Ben (96m)</string>
+<string name="lblEiffel">Wieża Eiffel (324m)</string>
+<string name="lblEmpireSt">Empire State Building (449m)</string>
+<string name="lblCN">CN Tower (553m)</string>
+<string name="lblBurj">Burj Dubai (~800m)</string>
+
+
+<string name="lblImpactVal">Uderzenie</string>
+<string name="lblClickMap">Kliknij na mapę aby określić położenie krateru...</string>
+<string name="cvsData">Dane</string>
+<string name="cvsSize">Wielkość krateru</string>
+<string name="cvsDepth">Głębokość krateru</string>
+<string name="btBack">Wstecz</string>
+<string name="btReset">Od nowa</string>
+<string name="lbCrater">Krater jest za mały aby był widoczny</string>
+
+
+<string name="htParameter">Parametr</string>
+<string name="htValue">Wartość</string>
+
+
+<string name="lblDistance">Odległość obserwatora od miejsca upadku asteroidy:</string>
+<string name="lblInVals">Wartości początkowe</string>
+<string name="pnlResults">Wyniki obliczeń</string>
+<string name="lblCrDepth">Głębokość krateru</string>
+<string name="lblLandmark">Wybierz krajobraz:</string>
+<string name="lblImpEnergy">Energia uderzenia</string>
+<string name="lblWhatImpactor">Co stanie się z asteroidą?</string>
+<string name="lblFireball">Czy będzie widoczny bolid?</string>
+
+
+
+
+<string name="lbKE">Energia kinetyczna</string>
+<string name="lbImE">Energia uderzenia</string>
+<string name="lbImM">Masa</string>
+<string name="lbPjVel">Prędkość asteroidy</string>
+<string name="lbPjAng">Trajektoria</string>
+<string name="lbTgDens">Powierzchnia Ziemi</string>
+<string name="lbPjDens">Materiał, z którego zbudowana jest asteroida</string>
+<string name="lbCrDiam">Szerokość krateru</string>
+<string name="lbCrDepth">Głębokość krateru</string>
+<string name="lbCrThickness">Wyrzut</string>
+<string name="lbAbBurst">Wysokość wybuchu</string>
+<string name="lbAbBreak">Wysokość rozpadu</string>
+<string name="lbAbVel">Prędkość wiatru</string>
+<string name="lbAbRichter">Skala Richter\'a</string>
+<string name="lbAbAmpl">Wysokość dźwięku</string>
+<string name="lbFbRad">Promień</string>
+<string name="lbFbDuration">Maksymalny poziom promieniowania cieplnego</string>
+<string name="lbFbExp">Ekspozycja</string>
+<string name="lbFbPeaktime">Czas napromieniowania</string>
+<string name="lbNoData">Niewłaściwy</string>
+<string name="lbFreq">Jak często?</string>
+
+
+<string name="lbAcknow">Podziękowania</string>
+<string name="hide">Schowaj</string>
+<string name="lbAuthor">Autorzy:</string>
+<string name="lbBased">Na podstawie badań naukowych wykonanych przez:</string>
+
+
+<string name="projectile1">Pocisk nienaruszony, prędkość </string>
+<string name="projectile2">Energia utracona podczas lotu w atmosferze to </string>
+<string name="projectile3">Rozpad pocisku rozpoczął się na wysokości </string>
+<string name="projectile4">Prędkość fragmentów pocisku po wybuchu to </string>
+<string name="projectile5">Energia wybuchu w powietrzu to </string>
+<string name="projectile6">Duże fragmenty uderzają w powierzchnię i mogą spowodować powstanie pola kraterów. Wymagane jest ostrożniejsze określenie parametrów wejścia w atmosferę w celu dokładniejszego oszacowania rozkładu fragmentów oraz liczby i rozmiarów kraterów.</string>
+<string name="projectile7">Pocisk osiąga powierzchnię ziemi po rozpadzie. Pozostałości pocisku uderzają z prędkością </string>
+
+
+<string name="expos1">Odzież zaczyna się palić</string>
+<string name="expos2">Większość powierzchni ciała ulega oparzeniom trzeciego stopnia</string>
+<string name="expos3">Większość powierzchni ciała ulega oparzeniom drugiego stopnia</string>
+<string name="expos4">Większość powierzchni ciała ulega oparzeniom pierwszego stopnia</string>
+<string name="expos5">Zaczyna palić się papier</string>
+<string name="expos6">Płonie sklejka</string>
+<string name="expos7">Zaczynają palić się drzewa liściaste</string>
+<string name="expos8">Zaczyna palić się trawa</string>
+
+
+<string name="opress1">Zawala się budynek wielopoziomowy</string>
+<string name="opress2">Budynek wielopoziomowy ma naruszoną konstrukcję, zawalają się ścianki działowe</string>
+<string name="opress3">Budynek o konstrukcji drewnianej zawala się niemalże całkowicie</string>
+<string name="opress4">Budynek o konstrukcji drewnianej zostanie poważnie zniszczony wewnątrz. Uszkodzony zostanie dach.</string>
+<string name="opress5">Konstrukcja żel betonowego budynku biurowego zostanie bardzo poważnie zniszczona, zacznie się zawalać</string>
+<string name="opress6">Zawali się mały most</string>
+<string name="opress7">Konstrukcja mostu zostanie poważnie uszkodzona</string>
+<string name="opress8">Zawali się most o żelaznej konstrukcji</string>
+<string name="opress9">Wylecą szyby z okien</string>
+<string name="opress10">Samochody i ciężarówki zostaną poprzewracane, a ich ponowne wykorzystanie będzie musiało zostać poprzedzone poważnymi naprawami</string>
+<string name="opress11">Samochody i ciężarówki zostaną poprzewracane, a ich ponowne wykorzystanie będzie musiało zostać poprzedzone poważnymi naprawami</string>
+<string name="opress12">Bez znacznych zniszczeń</string>
+<string name="opress13">Ponad 90 procent drzew ulegnie zniszczeniu</string>
+<string name="opress14">Ponad 30 procent drzew ulegnie zniszczeniu</string>
+
+
+<string name="incrater">Znajdujesz się w środku krateru</string>
+
+
+<string name="damage1">Zniszczenia</string>
+<string name="damage2">od miejsca upadku</string>
+</resources>
+

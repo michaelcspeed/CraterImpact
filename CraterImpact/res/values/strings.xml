@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Impact Calculator</string>
+	<string name="btStart">Start</string>
+	<string name="lblTitle">Impact Calculator</string>
+	<string name="lblLanguage">Language:</string>
+
+
+	<string name="lblTranslation">Translation:</string>
+
+
+	<string name="cmdHelp">Help</string>
+	<string name="inputs">Input Parameters</string>
+	<string name="result">Calculation Results</string>
+
+
+	<string name="lblAstDiam">Asteroid Diameter</string>
+	<string name="lblValue">Value:</string>
+	<string name="lblWater">Water</string>
+	<string name="lblSedRock">Sedimentary Rock</string>
+	<string name="lblIgRock">Igneous Rock</string>
+	<string name="lblIce">Ice</string>
+	<string name="lblPorRock">Porous Rock</string>
+	<string name="lblDensRock">Dense Rock</string>
+	<string name="lblIron">Iron</string>
+
+
+	<string name="txtWaterDepth">Water Depth (m) :</string>
+	<string name="btSubmit">Submit</string>
+	<string name="lblObVelocity">Object Velocity</string>
+
+
+	<string name="lblSelect">Please Select...</string>
+	<string name="lblSphinx">Sphinx of Giza (20m)</string>
+	<string name="lblBen">Big Ben (96m)</string>
+	<string name="lblEiffel">Eiffel Tower (324m)</string>
+	<string name="lblEmpireSt">Empire State Building (449m)</string>
+	<string name="lblCN">CN Tower (553m)</string>
+	<string name="lblBurj">Burj Dubai (~800m)</string>
+
+
+	<string name="lblImpactVal">Impact Values</string>
+	<string name="lblClickMap">Click the map to place the crater...</string>
+	<string name="cvsData">Data View</string>
+	<string name="cvsSize">Crater Size</string>
+	<string name="cvsDepth">Crater Depth</string>
+	<string name="btBack">Go Back</string>
+	<string name="btReset">Reset</string>
+	<string name="lbCrater">Crater is too small to be seen</string>
+
+
+	<string name="htParameter">Parameter</string>
+	<string name="htValue">Value</string>
+
+
+	<string name="lblDistance">Distance from crash site</string>
+	<string name="lblInVals">Input Values</string>
+	<string name="pnlResults">Calculation Results</string>
+	<string name="lblCrDepth">Crater Depth</string>
+	<string name="lblLandmark">Select Landmark:</string>
+	<string name="lblImpEnergy">Impact Energy</string>
+	<string name="lblWhatImpactor">What happens to the impactor?</string>
+	<string name="lblFireball">Is a fireball seen?</string>
+
+
+
+
+	<string name="lbKE">Kinetic Energy</string>
+	<string name="lbImE">Impact Energy</string>
+	<string name="lbImM">Mass</string>
+	<string name="lbPjVel">Projectile Velocity</string>
+	<string name="lbPjAng">Trajectory Angle</string>
+	<string name="lbTgDens">Target Density</string>
+	<string name="lbPjDens">Projectile Density</string>
+	<string name="lbCrDiam">Crater Width</string>
+	<string name="lbCrDepth">Crater Depth</string>
+	<string name="lbCrThickness">Ejecta Thickness</string>
+	<string name="lbAbBurst">Burst Altitude</string>
+	<string name="lbAbBreak">Break-up Altitude</string>
+	<string name="lbAbVel">Wind Velocity</string>
+	<string name="lbAbRichter">Richter Magnitude</string>
+	<string name="lbAbAmpl">Sound pulse amplitude</string>
+	<string name="lbFbRad">Radius</string>
+	<string name="lbFbDuration">Peak thermal radiation at</string>
+	<string name="lbFbExp">Exposure</string>
+	<string name="lbFbPeaktime">Irradiation duration</string>
+	<string name="lbNoData">Not applicable</string>
+	<string name="lbFreq">How frequent?</string>
+
+
+	<string name="lbAcknow">Acknowledgments</string>
+	<string name="hide">Hide</string>
+	<string name="lbAuthor">Authors:</string>
+	<string name="lbBased">Based on original science of:</string>
+
+
+	<string name="projectile1">The projectile lands intact, with a velocity
+	</string>
+	<string name="projectile2">The energy lost in the atmosphere is </string>
+	<string name="projectile3">The projectile begins to breakup at an altitude of
+	</string>
+	<string name="projectile4">The velocity of the projectile fragments after the
+		burst is </string>
+	<string name="projectile5">The energy of the airburst is </string>
+	<string name="projectile6">Large fragments strike the surface and may create a
+		crater strewn field. A more careful treatment of atmospheric entry is
+		required to accurately estimate the size-frequency distribution of
+		meteoroid fragments and predict the number and size of craters formed.
+	</string>
+	<string name="projectile7">The projectile reaches the ground in a broken
+		condition. The mass of projectile strikes the surface at velocity
+	</string>
+
+
+	<string name="expos1">Clothing ignites</string>
+	<string name="expos2">Much of the body suffers third degree burns
+	</string>
+	<string name="expos3">Much of the body suffers second degree burns
+	</string>
+	<string name="expos4">Much of the body suffers first degree burns
+	</string>
+	<string name="expos5">Newspaper ignites</string>
+	<string name="expos6">Plywood flames</string>
+	<string name="expos7">Deciduous trees ignite</string>
+	<string name="expos8">Grass ignites</string>
+
+
+	<string name="opress1">Multistory wall-bearing buildings will collapse
+	</string>
+	<string name="opress2">Multistory wall-bearing buildings will experience
+		severe cracking and interior partitions will be blown down</string>
+	<string name="opress3">Wood frame buildings will almost completely
+		collapse</string>
+	<string name="opress4">Interior partitions of wood frame buildings will be
+		blown down. Roof will be severely damaged</string>
+	<string name="opress5">Multistory steel-framed office-type buildings will
+		suffer extreme frame distortion, incipient collapse</string>
+	<string name="opress6">Small bridges will collapse</string>
+	<string name="opress7">Bridges will suffer substantial distortion of
+		bracing</string>
+	<string name="opress8">Steel frame bridges will collapse</string>
+	<string name="opress9">Glass windows will shatter</string>
+	<string name="opress10">Cars and trucks will be largely displaced and
+		grossly distorted and will require rebuilding before use</string>
+	<string name="opress11">Cars and trucks will be overturned and displaced,
+		requiring major repairs</string>
+	<string name="opress12">No significant damage from atmospheric blast wave
+	</string>
+	<string name="opress13">Up to 90 percent of trees blown down; remainder
+		stripped of branches and leaves</string>
+	<string name="opress14">About 30 percent of trees blown down; remainder
+		have some branches and leaves blown off</string>
+
+
+	<string name="incrater">You are standing inside the crater</string>
+
+
+	<string name="showCrater">Show Crater</string>
+	<string name="hideCrater">Hide Crater</string>
+	<string name="damage1">Damage at </string>
+	<string name="damage2">from crash site</string>
+	
+	
+	<string-array name="languages">
+		<item>English</item>
+		<item>Welsh</item>
+		<item>German</item>
+		<item>French</item>
+		<item>Polish</item>
+		<item>Spanish</item>
+	</string-array>
+	
+	<string-array name="languagesCodes">
+		<item>en</item>
+		<item>cy</item>
+		<item>de</item>
+		<item>fr</item>
+		<item>pl</item>
+		<item>sp</item>
+	</string-array>
+</resources>
+

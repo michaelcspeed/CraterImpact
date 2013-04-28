@@ -1,0 +1,64 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/bottomItems"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="40dp">
+
+		<TextView
+			android:id="@+id/textVelocity"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:text="0kmph" />
+
+
+
+		<SeekBar
+			android:id="@+id/seekBarVelocity"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textVelocity"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:progress="0"
+			android:max="60" />
+
+		<Button
+			android:id="@+id/buttonNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/seekBarVelocity"
+			android:layout_centerHorizontal="true"
+			android:text="@string/btSubmit" />
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bottomItems"
+		android:layout_marginBottom="40dp">
+
+		<ImageView
+			android:id="@+id/imageVelocty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:scaleType="fitXY"
+			
+			android:src="@drawable/ic_launcher" />
+
+	</RelativeLayout>
+
+
+</RelativeLayout>
