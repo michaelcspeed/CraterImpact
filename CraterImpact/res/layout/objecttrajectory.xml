@@ -41,22 +41,28 @@
 			android:layout_below="@+id/seekBarProjectileAngle"
 			android:layout_centerHorizontal="true"
 			android:text="@string/btSubmit" />
-	</RelativeLayout>
 
+	</RelativeLayout>
 
 	<RelativeLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_above="@+id/bottomItems"
-		android:layout_marginBottom="40dp">
+		android:gravity="center">
 
-		<View
-			android:id="@+id/imageTrajectoryLine"
-			android:background="@drawable/rectangle"
-			android:layout_width="80dp"
-			android:layout_height="5dp"
-			android:layout_centerHorizontal="true"
-			android:layout_centerVertical="true" />
+		<ImageView
+			android:id="@+id/imageTraj"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:src="@drawable/impactangle" />
+		<ImageView
+			android:id="@+id/imageTrajb"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:layout_below="@id/imageTraj"
+			android:src="@drawable/impactangleb" />
 
 	</RelativeLayout>
 

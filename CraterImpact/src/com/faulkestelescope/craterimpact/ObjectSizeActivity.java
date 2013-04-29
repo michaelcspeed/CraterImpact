@@ -56,20 +56,22 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 
 		LayoutParams params = (LayoutParams) imageProjectile.getLayoutParams();
 
+		
+		int coef = 30;
 		if (progressNo > 2000 && progressNo < 11000) {
 
-			params.width = progressNo / 18;
-			params.height = progressNo / 18;
+			params.width = progressNo / coef;
+			params.height = progressNo / coef;
 			// existing height is ok as is, no need to edit it
 			imageProjectile.setLayoutParams(params);
 		} else if (progressNo <= 2000) {
-			params.width = 2000 / 18;
-			params.height = 2000 / 18;
+			params.width = 2000 / coef;
+			params.height = 2000 / coef;
 			// existing height is ok as is, no need to edit it
 			imageProjectile.setLayoutParams(params);
 		} else {
-			params.width = 11000 / 18;
-			params.height = 11000 / 18;
+			params.width = 11000 / coef;
+			params.height = 11000 / coef;
 			// existing height is OK as is, no need to edit it
 			imageProjectile.setLayoutParams(params);
 		}

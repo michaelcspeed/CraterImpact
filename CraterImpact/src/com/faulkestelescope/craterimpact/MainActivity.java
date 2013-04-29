@@ -76,7 +76,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					R.array.languagesCodes);
 			int i = spinner1.getSelectedItemPosition();
 			setLanguage(languages[i]);
-			
+
 			Intent intent = new Intent(this, ObjectSizeActivity.class);
 			startActivity(intent);
 

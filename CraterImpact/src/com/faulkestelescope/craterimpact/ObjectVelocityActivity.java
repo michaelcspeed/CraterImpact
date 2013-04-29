@@ -73,7 +73,7 @@ public class ObjectVelocityActivity extends Activity implements
 		matrix = new Matrix();
 
 		// set image rotation value to 45 degrees in matrix.
-		matrix.postRotate((float) (progressNo * 3.5));
+		matrix.postRotate((float) (progressNo * 3)); // 180degrees / 60 kmph = 3
 
 		// Create bitmap with new values.
 		Bitmap bMapRotate = Bitmap.createBitmap(bMap, 0, 0, bMap.getWidth(),

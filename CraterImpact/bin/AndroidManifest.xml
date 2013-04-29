@@ -29,6 +29,9 @@
 		<activity android:name="ObjectVelocityActivity"></activity>
 		<activity android:name="ObjectSizeActivity"></activity>
 		<activity android:name="ObjectTrajectoryActivity"></activity>
-	</application>
+		<activity android:name="ObjectDensityActivity"></activity>
+		<activity android:name="ObjectTargetDensActivity"></activity>
+		
+			</application>
 
 </manifest>

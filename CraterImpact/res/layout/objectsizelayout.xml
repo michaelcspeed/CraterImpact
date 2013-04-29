@@ -56,8 +56,7 @@
 			android:layout_centerHorizontal="true"
 			android:layout_centerVertical="true"
 			android:scaleType="fitXY"
-			
-			android:src="@drawable/ic_launcher" />
+			android:src="@drawable/prj" />
 
 	</RelativeLayout>
 

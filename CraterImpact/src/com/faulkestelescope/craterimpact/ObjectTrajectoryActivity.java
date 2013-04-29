@@ -5,13 +5,16 @@ import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.TextView;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
 
 public class ObjectTrajectoryActivity extends Activity implements
 		OnClickListener,
@@ -20,7 +23,7 @@ public class ObjectTrajectoryActivity extends Activity implements
 	private TextView textTraj;
 	private SeekBar seekBarTraj;
 	private Button buttonNext;
-	private View imageTraj;
+	private ImageView imageTraj;
 	private Bitmap bMap;
 	private Matrix matrix;
 	private RotateAnimation an;
@@ -31,7 +34,7 @@ public class ObjectTrajectoryActivity extends Activity implements
 		textTraj = (TextView) findViewById(R.id.textProjectileAngle);
 		seekBarTraj = (SeekBar) findViewById(R.id.seekBarProjectileAngle);
 		buttonNext = (Button) findViewById(R.id.buttonNext);
-		imageTraj = (View) findViewById(R.id.imageTrajectoryLine);
+		imageTraj = (ImageView) findViewById(R.id.imageTraj);
 
 		buttonNext.setOnClickListener(this);
 		seekBarTraj.setOnSeekBarChangeListener(this);
@@ -40,7 +43,8 @@ public class ObjectTrajectoryActivity extends Activity implements
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-
+			Intent intent = new Intent(this, ObjectDensityActivity.class);
+			startActivity(intent);
 		}
 	}
 
@@ -63,17 +67,7 @@ public class ObjectTrajectoryActivity extends Activity implements
 
 		textTraj.setText(progressNo + "\u00B0");
 
-		// Create an animation instance
-		an = new RotateAnimation(0.0f, 360 - progressNo, 0, 0);
-
-		// Set the animation's parameters
-		an.setDuration(10); // duration in ms
-		an.setRepeatCount(0); // -1 = infinite repeated
-		// an.setRepeatMode(Animation.RELATIVE_TO_SELF); // reverses each repeat
-		//an.setFillAfter(true); // keep rotation after animation
-
-		// Apply animation to image view
-		imageTraj.setAnimation(an);
+		
 
 	}
 
