@@ -31,7 +31,7 @@
 		<activity android:name="ObjectTrajectoryActivity"></activity>
 		<activity android:name="ObjectDensityActivity"></activity>
 		<activity android:name="ObjectTargetDensActivity"></activity>
-		
-			</application>
+		<activity android:name="DistanceFromCrashSiteActivity"></activity>
+	</application>
 
 </manifest>

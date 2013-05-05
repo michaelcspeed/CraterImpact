@@ -48,6 +48,15 @@
 		android:layout_above="@+id/bottomItems"
 		android:layout_marginBottom="40dp">
 
+	    <ImageView
+			android:id="@+id/speedoBG"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:scaleType="fitXY"
+			android:src="@drawable/speedo" />
+	    
 		<ImageView
 			android:id="@+id/imageVelocty"
 			android:layout_width="wrap_content"
@@ -55,8 +64,7 @@
 			android:layout_centerHorizontal="true"
 			android:layout_centerVertical="true"
 			android:scaleType="fitXY"
-			
-			android:src="@drawable/ic_launcher" />
+			android:src="@drawable/speedneedle1" />
 
 	</RelativeLayout>
 

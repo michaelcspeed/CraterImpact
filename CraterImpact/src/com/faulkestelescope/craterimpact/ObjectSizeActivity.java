@@ -21,6 +21,7 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	private SeekBar seekBarProjectileSize;
 	private Button buttonNext;
 	private ImageView imageProjectile;
+	private LayoutParams params;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,12 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 
 		setContentView(R.layout.objectsizelayout);
 		findViews();
+
+		params = (LayoutParams) imageProjectile.getLayoutParams();
+
+		params.width = 250;
+		params.height = 250;
+		imageProjectile.setLayoutParams(params);
 		setTitle(R.string.lblAstDiam);
 
 	}
@@ -54,9 +61,8 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	public void onProgressChanged(SeekBar arg0, int progressNo, boolean arg2) {
 		textProjectileSize.setText(progressNo + "m");
 
-		LayoutParams params = (LayoutParams) imageProjectile.getLayoutParams();
+		params = (LayoutParams) imageProjectile.getLayoutParams();
 
-		
 		int coef = 30;
 		if (progressNo > 2000 && progressNo < 11000) {
 

@@ -1,14 +1,11 @@
 package com.faulkestelescope.craterimpact;
 
-import java.util.Locale;
-
 import org.holoeverywhere.app.Activity;
 import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.TextView;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -67,7 +64,7 @@ public class ObjectVelocityActivity extends Activity implements
 
 		// Decode Image using Bitmap factory.
 		bMap = BitmapFactory.decodeResource(getResources(),
-				R.drawable.ic_launcher);
+				R.drawable.speedneedle1);
 
 		// Create object of new Matrix.
 		matrix = new Matrix();
