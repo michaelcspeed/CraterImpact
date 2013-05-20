@@ -1,0 +1,80 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/horiz"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:padding="10dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true">
+
+		<ImageView
+			android:id="@+id/imageView1"
+			android:layout_width="15dp"
+			android:layout_height="50dp"
+			android:src="@drawable/stickman" />
+		<ImageView
+			android:id="@+id/imageView1"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:src="@drawable/arrowright" />
+		<ImageView
+			android:id="@+id/imageView1"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:src="@drawable/prj" />
+	</LinearLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:layout_marginBottom="40dp">
+
+		<TextView
+			android:id="@+id/textDistance"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:textSize="60sp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:text="0 km" />
+
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/bottomItems"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="40dp">
+
+		<Button
+			android:id="@+id/buttonNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:text="@string/btSubmit" />
+
+		<SeekBar
+			android:id="@+id/seekBarDistance"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/buttonNext"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:progress="0"
+			android:max="500" />
+
+	</RelativeLayout>
+
+</RelativeLayout>
