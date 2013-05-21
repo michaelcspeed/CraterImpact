@@ -14,7 +14,7 @@ public class DataFragment extends Fragment implements OnClickListener {
 	private Button inputButton;
 	private Button damageButton;
 	private Button energyButton;
-	private Button resultResult;
+	private Button resultButtton;
 	private Button fireballButton;
 	private View mainView;
 
@@ -22,17 +22,16 @@ public class DataFragment extends Fragment implements OnClickListener {
 		inputButton = (Button) mainView.findViewById(R.id.inputButton);
 		damageButton = (Button) mainView.findViewById(R.id.damageButton);
 		energyButton = (Button) mainView.findViewById(R.id.energyButton);
-		resultResult = (Button) mainView.findViewById(R.id.resultResult);
+		resultButtton = (Button) mainView.findViewById(R.id.resultResult);
 		fireballButton = (Button) mainView.findViewById(R.id.fireballButton);
 
 		inputButton.setOnClickListener(this);
 		damageButton.setOnClickListener(this);
 		energyButton.setOnClickListener(this);
-		resultResult.setOnClickListener(this);
+		resultButtton.setOnClickListener(this);
 		fireballButton.setOnClickListener(this);
 	}
 
-	
 	@Override
 	public void onClick(View v) {
 		if (v == inputButton) {
@@ -44,8 +43,8 @@ public class DataFragment extends Fragment implements OnClickListener {
 		} else if (v == energyButton) {
 			Intent intent = new Intent(getActivity(), ImpactEnergyActivity.class);
 			startActivity(intent);
-		} else if (v == resultResult) {
-			Intent intent = new Intent(getActivity(), null);
+		} else if (v == resultButtton) {
+			Intent intent = new Intent(getActivity(), ResultActivity.class);
 			startActivity(intent);
 		} else if (v == fireballButton) {
 			Intent intent = new Intent(getActivity(), FireballActivity.class);

@@ -5,6 +5,8 @@ import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.TextView;
 
+import control.DataProvider;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -38,6 +40,7 @@ public class ObjectVelocityActivity extends Activity implements
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
+			DataProvider.setProjVel(seekBarVelocity.getProgress());
 			Intent intent = new Intent(this, ObjectTrajectoryActivity.class);
 			startActivity(intent);
 		}

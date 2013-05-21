@@ -38,7 +38,11 @@
 		<activity
 			android:name="com.faulkestelescope.craterimpact.MainActivity"
 			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
 
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
 		</activity>
 		<activity android:name="com.faulkestelescope.craterimpact.ObjectVelocityActivity">
 		</activity>
@@ -55,11 +59,6 @@
 		</activity>
 		<activity
 			android:name="com.faulkestelescope.craterimpact.ResultsTabControllerActivity">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
 		</activity>
 		<activity
 			android:name="com.faulkestelescope.craterimpact.InputActivity"
@@ -70,6 +69,8 @@
 		<activity android:name="com.faulkestelescope.craterimpact.FireballActivity">
 		</activity>
 		<activity android:name="com.faulkestelescope.craterimpact.DamageActivity">
+		</activity>
+		<activity android:name="com.faulkestelescope.craterimpact.ResultActivity">
 		</activity>
 
 		<meta-data

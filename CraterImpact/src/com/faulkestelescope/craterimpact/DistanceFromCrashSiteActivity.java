@@ -6,6 +6,8 @@ import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.SeekBar.OnSeekBarChangeListener;
 import org.holoeverywhere.widget.TextView;
 
+import control.DataProvider;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +43,7 @@ public class DistanceFromCrashSiteActivity extends Activity implements
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
+			DataProvider.setImpactDist(seekBarProjectileSize.getProgress());
 			Intent intent = new Intent(this, ResultsTabControllerActivity.class);
 			startActivity(intent);
 		}

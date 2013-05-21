@@ -6,6 +6,8 @@ import org.holoeverywhere.widget.AdapterView.OnItemSelectedListener;
 import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.Spinner;
 
+import control.DataProvider;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -41,7 +43,7 @@ public class ObjectDensityActivity extends Activity implements OnClickListener,
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-
+			DataProvider.setCbPjDens(Spinner1.getSelectedItemPosition());
 			Intent intent = new Intent(this, ObjectTargetDensActivity.class);
 			startActivity(intent);
 		}

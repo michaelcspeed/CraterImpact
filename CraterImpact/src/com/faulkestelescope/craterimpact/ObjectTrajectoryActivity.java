@@ -5,6 +5,8 @@ import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.TextView;
 
+import control.DataProvider;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
@@ -43,6 +45,7 @@ public class ObjectTrajectoryActivity extends Activity implements
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
+			DataProvider.setProjAngle(seekBarTraj.getProgress());
 			Intent intent = new Intent(this, ObjectDensityActivity.class);
 			startActivity(intent);
 		}

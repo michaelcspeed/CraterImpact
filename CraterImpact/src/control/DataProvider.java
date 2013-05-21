@@ -38,9 +38,9 @@ public class DataProvider {
 	
 	static int cbLocation;/**The selected location if a default location is selected**/
 	
-	static double projDiam;/**Projectile Diamiter**/
+	static double projDiam;/**Projectile Diameter**/
 	static double projAngle;/**Projectile Angle**/
-	static double projVel;/**Projectile velolcity**/
+	static double projVel;/**Projectile velocity**/
 	static double impactDist;/**Distance from Impact**/
 	
 	//Output Fields//
