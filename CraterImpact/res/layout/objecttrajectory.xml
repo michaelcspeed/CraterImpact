@@ -19,10 +19,7 @@
 			android:layout_height="wrap_content"
 			android:layout_alignParentTop="true"
 			android:layout_centerHorizontal="true"
-			android:text="0\u00B0" />
-
-
-
+			android:text="90\u00B0" />
 
 		<SeekBar
 			android:id="@+id/seekBarProjectileAngle"
@@ -31,7 +28,8 @@
 			android:layout_below="@+id/textProjectileAngle"
 			android:layout_marginLeft="20dp"
 			android:layout_marginRight="20dp"
-			android:progress="0"
+			android:progress="90"
+			
 			android:max="90" />
 
 		<Button
@@ -44,22 +42,29 @@
 
 	</RelativeLayout>
 
-	<RelativeLayout
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:layout_above="@+id/bottomItems"
-		android:gravity="center"
-		android:background="@drawable/impactangleb"
-		>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center">
+
+		<com.faulkestelescope.craterimpact.CustomImageView
+			android:id="@+id/imageTraj"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="matrix"
+			android:src="@drawable/impactangle" />
 
 		<ImageView
 			android:id="@+id/imageTraj"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:scaleType="fitXY"
-			android:src="@drawable/impactangle" />
+			android:layout_marginLeft="50dp"
+			android:layout_marginRight="50dp"
+			android:src="@drawable/impactangleb" />
 
-	</RelativeLayout>
+	</LinearLayout>
 
 
 </RelativeLayout>
