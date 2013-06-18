@@ -5,13 +5,14 @@ import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.TextView;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import control.DataProvider;
 
 public class ObjectTrajectoryActivity extends Activity implements
 		OnClickListener,
@@ -25,6 +26,8 @@ public class ObjectTrajectoryActivity extends Activity implements
 	float finsih = 0;
 	private Bitmap bMap;
 	private static Matrix matrix;
+	
+	SharedPreferences prefs;
 
 	private void findViews() {
 		textTraj = (TextView) findViewById(R.id.textProjectileAngle);
@@ -39,7 +42,9 @@ public class ObjectTrajectoryActivity extends Activity implements
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-			DataProvider.setProjAngle(seekBarTraj.getProgress());
+			Long l = (long) seekBarTraj.getProgress();
+			prefs.edit().putLong(Globals.trajKey, l).commit();
+//			DataProvider.setProjAngle(seekBarTraj.getProgress());
 			Intent intent = new Intent(this, ObjectDensityActivity.class);
 			startActivity(intent);
 		}
@@ -51,6 +56,9 @@ public class ObjectTrajectoryActivity extends Activity implements
 		setContentView(R.layout.objecttrajectory);
 		findViews();
 		setTitle(R.string.lbPjAng);
+		
+		prefs = this.getSharedPreferences(
+			      "com.faulkestelescope.craterimpact", Context.MODE_PRIVATE);
 
 	}
 
@@ -66,26 +74,7 @@ public class ObjectTrajectoryActivity extends Activity implements
 			progressNo = 1;
 
 		imageTraj.setAngleRotation(90-progressNo);
-		
-		
-		/*
-		// Decode Image using Bitmap factory.
-		bMap = BitmapFactory.decodeResource(getResources(),
-				R.drawable.impactangle);
 
-		// Create object of new Matrix.
-		matrix = new Matrix();
-
-		// set image rotation value to 45 degrees in matrix.
-		matrix.postRotate(progressNo); // 180degrees / 60 kmph = 3
-
-		// Create bitmap with new values.
-		Bitmap bMapRotate = Bitmap.createBitmap(bMap, 0, 0, bMap.getWidth(),
-				bMap.getHeight(), matrix, true);
-
-		// put rotated image in ImageView.
-		imageTraj.setImageBitmap(bMapRotate);
-*/
 		textTraj.setText(progressNo + "\u00B0");
 	}
 

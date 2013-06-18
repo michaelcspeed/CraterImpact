@@ -1,36 +1,27 @@
 package com.faulkestelescope.craterimpact;
 
-import java.util.ArrayList;
+import org.holoeverywhere.app.Activity;
 
-import org.holoeverywhere.LayoutInflater;
-import org.holoeverywhere.app.ListActivity;
-import org.holoeverywhere.widget.ListView;
-import org.holoeverywhere.widget.Toast;
+import control.DataProvider;
 
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewGroup;
+import android.widget.TextView;
 
-public class DamageActivity extends ListActivity {
+public class DamageActivity extends Activity {
 
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTitle(getResources().getString(R.string.damage));
+		setContentView(R.layout.resultsactivity);
 
-		ArrayList<ParameterAndValueObject> items = new ArrayList<ParameterAndValueObject>();
+		TextView t = (TextView) findViewById(R.id.resultstext);
 
-		items.add(new ParameterAndValueObject("hello", "hello"));
-		items.add(new ParameterAndValueObject("hello", "hello"));
-		items.add(new ParameterAndValueObject("hello", "hello"));
-		items.add(new ParameterAndValueObject("hello", "hello"));
-
-		LayoutInflater inflater = getLayoutInflater();
-		ViewGroup header = (ViewGroup) inflater.inflate(
-				R.layout.input_values_list_item, getListView(), false);
-		getListView().addHeaderView(header, null, false);
-
-		setListAdapter(new ParameterAndValueListAdapter(this, items));
-
+		try {
+			t.setText(DataProvider.getTxtDamage());
+		} catch (NullPointerException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

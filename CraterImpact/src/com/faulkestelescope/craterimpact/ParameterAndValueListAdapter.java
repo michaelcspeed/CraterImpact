@@ -7,6 +7,7 @@ import org.holoeverywhere.LayoutInflater;
 import org.holoeverywhere.widget.TextView;
 
 import android.content.Context;
+import android.text.Html;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -29,7 +30,7 @@ public class ParameterAndValueListAdapter extends ArrayAdapter<ParameterAndValue
 		TextView pText = (TextView) rowView.findViewById(R.id.parameterText);
 		TextView valueText = (TextView) rowView.findViewById(R.id.valueText);
 		pText.setText(values.get(position).parameter);
-		valueText.setText(values.get(position).value);
+		valueText.setText(Html.fromHtml(values.get(position).value));
 
 		return rowView;
 	}

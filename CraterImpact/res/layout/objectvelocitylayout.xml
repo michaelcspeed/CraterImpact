@@ -18,7 +18,7 @@
 			android:layout_height="wrap_content"
 			android:layout_alignParentTop="true"
 			android:layout_centerHorizontal="true"
-			android:text="0kmph" />
+			android:text="1kmph" />
 
 
 
@@ -29,7 +29,7 @@
 			android:layout_below="@+id/textVelocity"
 			android:layout_marginLeft="20dp"
 			android:layout_marginRight="20dp"
-			android:progress="0"
+			android:progress="1"
 			android:max="60" />
 
 		<Button

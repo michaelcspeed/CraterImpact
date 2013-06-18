@@ -8,30 +8,30 @@ package com.google.android.gms;
 
 public final class R {
 	public static final class id {
-		public static final int terrain = 0x7f070012;
-		public static final int none = 0x7f070010;
-		public static final int satellite = 0x7f070011;
-		public static final int hybrid = 0x7f070013;
+		public static final int terrain = 0x7f070040;
+		public static final int none = 0x7f070029;
+		public static final int satellite = 0x7f07003f;
+		public static final int hybrid = 0x7f070041;
 		public static final int normal = 0x7f070001;
 	}
 	public static final class string {
-		public static final int common_google_play_services_install_title = 0x7f0c000f;
-		public static final int common_google_play_services_unsupported_title = 0x7f0c0019;
-		public static final int common_google_play_services_enable_title = 0x7f0c0013;
-		public static final int common_google_play_services_install_text_tablet = 0x7f0c0011;
-		public static final int auth_client_availability_notification_title = 0x7f0c001d;
-		public static final int common_signin_button_text_long = 0x7f0c001c;
-		public static final int common_google_play_services_enable_button = 0x7f0c0015;
-		public static final int common_google_play_services_update_title = 0x7f0c0016;
-		public static final int auth_client_play_services_err_notification_msg = 0x7f0c001e;
-		public static final int common_google_play_services_update_text = 0x7f0c0017;
-		public static final int common_google_play_services_install_button = 0x7f0c0012;
-		public static final int common_google_play_services_install_text_phone = 0x7f0c0010;
-		public static final int common_google_play_services_update_button = 0x7f0c001b;
-		public static final int common_google_play_services_unknown_issue = 0x7f0c0018;
-		public static final int common_google_play_services_unsupported_text = 0x7f0c001a;
-		public static final int common_google_play_services_enable_text = 0x7f0c0014;
-		public static final int auth_client_requested_by_msg = 0x7f0c001f;
+		public static final int common_google_play_services_install_title = 0x7f0c002e;
+		public static final int common_google_play_services_unsupported_title = 0x7f0c0038;
+		public static final int common_google_play_services_enable_title = 0x7f0c0032;
+		public static final int common_google_play_services_install_text_tablet = 0x7f0c0030;
+		public static final int auth_client_availability_notification_title = 0x7f0c003c;
+		public static final int common_signin_button_text_long = 0x7f0c003b;
+		public static final int common_google_play_services_enable_button = 0x7f0c0034;
+		public static final int common_google_play_services_update_title = 0x7f0c0035;
+		public static final int auth_client_play_services_err_notification_msg = 0x7f0c003d;
+		public static final int common_google_play_services_update_text = 0x7f0c0036;
+		public static final int common_google_play_services_install_button = 0x7f0c0031;
+		public static final int common_google_play_services_install_text_phone = 0x7f0c002f;
+		public static final int common_google_play_services_update_button = 0x7f0c003a;
+		public static final int common_google_play_services_unknown_issue = 0x7f0c0037;
+		public static final int common_google_play_services_unsupported_text = 0x7f0c0039;
+		public static final int common_google_play_services_enable_text = 0x7f0c0033;
+		public static final int auth_client_requested_by_msg = 0x7f0c003e;
 	}
 	public static final class styleable {
 		public static final int MapAttrs_uiCompass = 6;
@@ -41,7 +41,7 @@ public final class R {
 		public static final int MapAttrs_cameraBearing = 1;
 		public static final int MapAttrs_uiZoomControls = 10;
 		public static final int MapAttrs_zOrderOnTop = 13;
-		public static final int[] MapAttrs = { 0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e };
+		public static final int[] MapAttrs = { 0x7f010102, 0x7f010103, 0x7f010104, 0x7f010105, 0x7f010106, 0x7f010107, 0x7f010108, 0x7f010109, 0x7f01010a, 0x7f01010b, 0x7f01010c, 0x7f01010d, 0x7f01010e, 0x7f01010f };
 		public static final int MapAttrs_cameraTargetLat = 2;
 		public static final int MapAttrs_cameraTargetLng = 3;
 		public static final int MapAttrs_uiTiltGestures = 9;
@@ -51,19 +51,19 @@ public final class R {
 		public static final int MapAttrs_useViewLifecycle = 12;
 	}
 	public static final class attr {
-		public static final int cameraTargetLng = 0x7f010064;
-		public static final int uiScrollGestures = 0x7f010069;
-		public static final int zOrderOnTop = 0x7f01006e;
-		public static final int cameraBearing = 0x7f010062;
-		public static final int cameraTargetLat = 0x7f010063;
-		public static final int uiRotateGestures = 0x7f010068;
-		public static final int uiZoomGestures = 0x7f01006c;
-		public static final int uiCompass = 0x7f010067;
-		public static final int uiZoomControls = 0x7f01006b;
-		public static final int cameraTilt = 0x7f010065;
-		public static final int cameraZoom = 0x7f010066;
-		public static final int uiTiltGestures = 0x7f01006a;
-		public static final int useViewLifecycle = 0x7f01006d;
-		public static final int mapType = 0x7f010061;
+		public static final int cameraTargetLng = 0x7f010105;
+		public static final int uiScrollGestures = 0x7f01010a;
+		public static final int zOrderOnTop = 0x7f01010f;
+		public static final int cameraBearing = 0x7f010103;
+		public static final int cameraTargetLat = 0x7f010104;
+		public static final int uiRotateGestures = 0x7f010109;
+		public static final int uiZoomGestures = 0x7f01010d;
+		public static final int uiCompass = 0x7f010108;
+		public static final int uiZoomControls = 0x7f01010c;
+		public static final int cameraTilt = 0x7f010106;
+		public static final int cameraZoom = 0x7f010107;
+		public static final int uiTiltGestures = 0x7f01010b;
+		public static final int useViewLifecycle = 0x7f01010e;
+		public static final int mapType = 0x7f010102;
 	}
 }

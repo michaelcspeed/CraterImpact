@@ -1,17 +1,15 @@
 package com.faulkestelescope.craterimpact;
 
 import org.holoeverywhere.app.Activity;
-import org.holoeverywhere.app.Dialog;
+import org.holoeverywhere.preference.SharedPreferences;
 import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.SeekBar.OnSeekBarChangeListener;
 import org.holoeverywhere.widget.TextView;
 
-import control.DataProvider;
-
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -24,6 +22,7 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	private Button buttonNext;
 	private ImageView imageProjectile;
 	private LayoutParams params;
+	private SharedPreferences prefs;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -32,12 +31,17 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 		setContentView(R.layout.objectsizelayout);
 		findViews();
 
+		 prefs = this.getSharedPreferences(
+			      "com.faulkestelescope.craterimpact", Context.MODE_PRIVATE);
+		
 		params = (LayoutParams) imageProjectile.getLayoutParams();
 
 		params.width = 250;
 		params.height = 250;
 		imageProjectile.setLayoutParams(params);
 		setTitle(R.string.lblAstDiam);
+		
+		
 
 	}
 
@@ -54,7 +58,8 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-			DataProvider.setProjDiam(seekBarProjectileSize.getProgress());
+			Long l = (long) seekBarProjectileSize.getProgress();
+			prefs.edit().putLong(Globals.diameterKey, l).commit();
 			Intent intent = new Intent(this, ObjectVelocityActivity.class);
 			startActivity(intent);
 		}

@@ -15,7 +15,7 @@ import ImpactModel.ImpactModel;
  */
 //###########################################################################
 public class DataProvider {
-
+	
 	static Control control;/**A local reference to the application control**/
 	
 	static final String LANGUAGE_UK = "uk";/**For UK locale**/

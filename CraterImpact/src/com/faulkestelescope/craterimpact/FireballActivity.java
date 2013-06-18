@@ -1,11 +1,14 @@
 package com.faulkestelescope.craterimpact;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.holoeverywhere.LayoutInflater;
 import org.holoeverywhere.app.ListActivity;
 import org.holoeverywhere.widget.ListView;
 import org.holoeverywhere.widget.Toast;
+
+import control.DataProvider;
 
 import android.os.Bundle;
 import android.view.View;
@@ -17,12 +20,21 @@ public class FireballActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		HashMap<String, String> fire = DataProvider.getDgFirevall();
+
 		ArrayList<ParameterAndValueObject> items = new ArrayList<ParameterAndValueObject>();
 
-		items.add(new ParameterAndValueObject("hello", "hello"));
-		items.add(new ParameterAndValueObject("hello", "hello"));
-		items.add(new ParameterAndValueObject("hello", "hello"));
-		items.add(new ParameterAndValueObject("hello", "hello"));
+		String rad = fire.get(getString(R.string.lbFbRad));
+		String dur = fire.get(getString(R.string.lbFbDuration));
+		String peak = fire.get(getString(R.string.lbFbPeaktime));
+
+		//check for nulls here too. putting a dash in if there is no fireball
+		items.add(new ParameterAndValueObject(getString(R.string.lbFbRad),
+				rad != null ? rad : "-"));
+		items.add(new ParameterAndValueObject(getString(R.string.lbFbDuration),
+				dur != null ? dur : "-"));
+		items.add(new ParameterAndValueObject(getString(R.string.lbFbPeaktime),
+				peak != null ? peak : "-"));
 
 		LayoutInflater inflater = getLayoutInflater();
 		ViewGroup header = (ViewGroup) inflater.inflate(

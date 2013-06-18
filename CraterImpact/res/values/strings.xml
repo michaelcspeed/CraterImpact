@@ -138,6 +138,8 @@
 	<string name="hideCrater">Hide Crater</string>
 	<string name="damage1">Damage at </string>
 	<string name="damage2">from crash site</string>
+	
+	<string name="damage">Damage</string>
 
 	<string-array name="languages">
 		<item>English</item>

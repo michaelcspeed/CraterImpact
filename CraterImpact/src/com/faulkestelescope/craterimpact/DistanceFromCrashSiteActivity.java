@@ -1,25 +1,25 @@
 package com.faulkestelescope.craterimpact;
 
 import org.holoeverywhere.app.Activity;
+import org.holoeverywhere.preference.SharedPreferences;
 import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.SeekBar;
 import org.holoeverywhere.widget.SeekBar.OnSeekBarChangeListener;
 import org.holoeverywhere.widget.TextView;
 
-import control.DataProvider;
-
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageView;
-import android.widget.RelativeLayout.LayoutParams;
 
 public class DistanceFromCrashSiteActivity extends Activity implements
 		OnClickListener, OnSeekBarChangeListener {
 	private TextView textProjectileSize;
 	private SeekBar seekBarProjectileSize;
 	private Button buttonNext;
+
+	SharedPreferences prefs;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,9 @@ public class DistanceFromCrashSiteActivity extends Activity implements
 		findViews();
 
 		setTitle(R.string.lblDistance);
+		
+		prefs = this.getSharedPreferences(
+				"com.faulkestelescope.craterimpact", Context.MODE_PRIVATE);
 	}
 
 	private void findViews() {
@@ -43,7 +46,11 @@ public class DistanceFromCrashSiteActivity extends Activity implements
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-			DataProvider.setImpactDist(seekBarProjectileSize.getProgress());
+			Long l = (long) seekBarProjectileSize.getProgress();
+			prefs.edit()
+					.putLong(Globals.distanceFromCrashSiteKey,
+							l).commit();
+
 			Intent intent = new Intent(this, ResultsTabControllerActivity.class);
 			startActivity(intent);
 		}
@@ -51,7 +58,7 @@ public class DistanceFromCrashSiteActivity extends Activity implements
 
 	@Override
 	public void onProgressChanged(SeekBar arg0, int progressNo, boolean arg2) {
-		textProjectileSize.setText(progressNo + " km");		
+		textProjectileSize.setText(progressNo + " km");
 	}
 
 	@Override
