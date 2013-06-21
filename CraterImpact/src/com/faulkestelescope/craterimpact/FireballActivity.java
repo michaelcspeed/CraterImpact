@@ -20,6 +20,7 @@ public class FireballActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		setTitle(getString(R.string.lblFireball));
 		HashMap<String, String> fire = DataProvider.getDgFirevall();
 
 		ArrayList<ParameterAndValueObject> items = new ArrayList<ParameterAndValueObject>();
@@ -28,7 +29,7 @@ public class FireballActivity extends ListActivity {
 		String dur = fire.get(getString(R.string.lbFbDuration));
 		String peak = fire.get(getString(R.string.lbFbPeaktime));
 
-		//check for nulls here too. putting a dash in if there is no fireball
+		// check for nulls here too. putting a dash in if there is no fireball
 		items.add(new ParameterAndValueObject(getString(R.string.lbFbRad),
 				rad != null ? rad : "-"));
 		items.add(new ParameterAndValueObject(getString(R.string.lbFbDuration),

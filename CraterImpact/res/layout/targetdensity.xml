@@ -5,40 +5,11 @@
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
-
 	<RelativeLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/bottomItems"
-		android:layout_alignParentBottom="true"
-		android:layout_marginBottom="40dp">
-
-		<Spinner
-			android:id="@+id/Spinner1"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_below="@+id/spinnerDensities"
-			android:entries="@array/targetdensities"
-			android:layout_marginLeft="20dp"
-			android:layout_marginRight="20dp" />
-
-		<Button
-			android:id="@+id/buttonNext"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_below="@+id/Spinner1"
-			android:layout_centerHorizontal="true"
-			android:text="@string/btSubmit" />
-
-	</RelativeLayout>
-
-	<RelativeLayout
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
 		android:layout_above="@+id/bottomItems"
 		android:gravity="center">
-
-
 
 		<ImageView
 			android:id="@+id/imageDens"
@@ -47,20 +18,40 @@
 			android:scaleType="fitXY"
 			android:layout_centerInParent="true"
 			android:src="@drawable/water" />
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:orientation="vertical">
 
 		<SeekBar
 			android:id="@+id/seekBarWater"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_above="@id/imageDens"
+			android:layout_above="@id/spinnerDensities"
 			android:layout_marginLeft="20dp"
 			android:layout_marginRight="20dp"
-			android:layout_marginBottom="20dp"
+			android:max="90"
 			android:progress="0"
-			android:visibility="visible"
-			android:max="90" />
-
-	</RelativeLayout>
-
+			android:visibility="visible" />
+		<Spinner
+			android:id="@+id/Spinner1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinnerDensities"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:entries="@array/targetdensities" />
+		<Button
+			android:id="@+id/buttonNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Spinner1"
+			android:layout_centerHorizontal="true"
+			android:text="@string/btSubmit" />
+	</LinearLayout>
 
 </RelativeLayout>

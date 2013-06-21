@@ -6,8 +6,8 @@
 	android:orientation="horizontal"
 	android:background="@color/abs__background_holo_light"
 	xmlns:tools="http://schemas.android.com/tools">
-	
-	<Spinner
+
+	<org.holoeverywhere.widget.Spinner
 		android:id="@+id/craterSpinner"
 		android:layout_width="fill_parent"
 		android:layout_alignParentBottom="true"
@@ -33,7 +33,13 @@
 		android:layout_margin="0dp"
 		android:src="@drawable/craterside"></ImageView>
 
-
-
+	<org.holoeverywhere.widget.TextView
+		android:id="@+id/heightAndWidthText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:gravity="center" />
 
 </RelativeLayout> 

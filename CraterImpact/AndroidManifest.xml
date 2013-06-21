@@ -57,7 +57,8 @@
 			android:name="com.faulkestelescope.craterimpact.DistanceFromCrashSiteActivity">
 		</activity>
 		<activity
-			android:name="com.faulkestelescope.craterimpact.ResultsTabControllerActivity">
+			android:name="com.faulkestelescope.craterimpact.ResultsTabControllerActivity"
+			android:screenOrientation="portrait">
 		</activity>
 		<activity
 			android:name="com.faulkestelescope.craterimpact.InputActivity"

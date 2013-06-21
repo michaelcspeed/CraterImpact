@@ -323,7 +323,7 @@ public class CraterCalcs {
 				impactor.imDesc += getString(R.string.projectile6);
 			}// end if
 			else {
-				impactor.imDesc += getString(R.string.projectile7)
+				impactor.imDesc += getString(R.string.projectile7) + " "
 						+ nbFormat2.format(impactor.imVel) + " km/s";
 				// impactor.imDesc +=
 				// "The broken projectile fragments strike the ground in an ellipse of dimension <b>%g km by %g km</b>",
@@ -1113,5 +1113,6 @@ public class CraterCalcs {
 		else
 			return "";
 	}// ============================================================================
+
 
 }// ##############################################################################
