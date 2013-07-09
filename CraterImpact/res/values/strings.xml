@@ -157,7 +157,7 @@
 		<item>pl</item>
 		<item>sp</item>
 	</string-array>
-	<string-array name="densities">
+	<string-array name="densities">d
 		<item>Ice</item>
 		<item>Porous Rock</item>
 		<item>Dense Rock</item>

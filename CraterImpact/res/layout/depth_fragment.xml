@@ -13,33 +13,17 @@
 		android:layout_alignParentBottom="true"
 		android:layout_height="wrap_content"
 		android:prompt="@string/lblSelect"
-		android:entries="@array/buildings" />
+		android:entries="@array/buildings"
+		android:padding="20dp" />
 
-	<ImageView
-		android:id="@+id/buildingImage"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_above="@id/craterSpinner"
-		android:layout_centerInParent="true"
-		android:src="@drawable/empire_state"></ImageView>
-
-	<ImageView
-		android:id="@+id/craterImage"
-		android:layout_width="match_parent"
-		android:layout_height="75dp"
-		android:layout_above="@id/craterSpinner"
-		android:padding="0dp"
-		android:scaleType="fitXY"
-		android:layout_margin="0dp"
-		android:src="@drawable/craterside"></ImageView>
-
-	<org.holoeverywhere.widget.TextView
-		android:id="@+id/heightAndWidthText"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_alignParentRight="true"
+	<com.faulkestelescope.craterimpact.CraterDrawView
+		android:id="@+id/canvasView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@+id/craterSpinner"
 		android:layout_alignParentTop="true"
-		android:gravity="center" />
+		android:layout_centerHorizontal="true" />
+
+
 
 </RelativeLayout> 

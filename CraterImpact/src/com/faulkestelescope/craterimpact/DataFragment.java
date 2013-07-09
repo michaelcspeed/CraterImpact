@@ -1,5 +1,7 @@
 package com.faulkestelescope.craterimpact;
 
+import com.actionbarsherlock.app.SherlockFragment;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +11,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class DataFragment extends Fragment implements OnClickListener {
+public class DataFragment extends SherlockFragment implements OnClickListener {
 
 	private Button inputButton;
 	private Button damageButton;

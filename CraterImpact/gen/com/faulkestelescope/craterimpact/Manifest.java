@@ -9,6 +9,6 @@ package com.faulkestelescope.craterimpact;
 
 public final class Manifest {
     public static final class permission {
-        public static final String MAPS_RECEIVE="your.package.name.permission.MAPS_RECEIVE";
+        public static final String MAPS_RECEIVE="om.faulkestelescope.craterimpact.permission.MAPS_RECEIVE";
     }
 }

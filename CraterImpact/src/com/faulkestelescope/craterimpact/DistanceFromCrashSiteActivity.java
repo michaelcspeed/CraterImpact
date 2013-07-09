@@ -51,7 +51,7 @@ public class DistanceFromCrashSiteActivity extends Activity implements
 					.putLong(Globals.distanceFromCrashSiteKey,
 							l).commit();
 
-			Intent intent = new Intent(this, ResultsTabControllerActivity.class);
+			Intent intent = new Intent(this, ResultsSliderHolderActivity.class);
 			startActivity(intent);
 		}
 	}
