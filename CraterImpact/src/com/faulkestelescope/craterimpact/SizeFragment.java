@@ -1,5 +1,9 @@
 package com.faulkestelescope.craterimpact;
 
+import org.holoeverywhere.widget.AdapterView;
+import org.holoeverywhere.widget.AdapterView.OnItemSelectedListener;
+import org.holoeverywhere.widget.Spinner;
+
 import android.app.Dialog;
 import android.location.Criteria;
 import android.location.Location;
@@ -20,11 +24,13 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 
 public class SizeFragment extends SherlockFragment implements
-		OnInfoWindowClickListener, LocationListener, OnClickListener {
+		OnInfoWindowClickListener, LocationListener, OnClickListener,
+		OnItemSelectedListener {
 
 	private GoogleMap map;
 	private boolean mapVerified;
@@ -32,7 +38,8 @@ public class SizeFragment extends SherlockFragment implements
 
 	private Location location;
 	private View mainView;
-	
+	private Spinner spinner;
+
 	public static SizeFragment newInstance() {
 		SizeFragment frag = new SizeFragment();
 		return frag;
@@ -42,8 +49,9 @@ public class SizeFragment extends SherlockFragment implements
 		mapVerified = false;
 
 		if (map == null) {
-			map = ((SupportMapFragment) getActivity().getSupportFragmentManager()
-					.findFragmentById(R.id.map)).getMap();
+			map = ((SupportMapFragment) getActivity()
+					.getSupportFragmentManager().findFragmentById(R.id.map))
+					.getMap();
 			// Check if we were successful in obtaining the map.
 			if (map != null) {
 				mapVerified = true;
@@ -59,15 +67,15 @@ public class SizeFragment extends SherlockFragment implements
 													// not available
 
 			int requestCode = 10;
-			Dialog dialog = GooglePlayServicesUtil.getErrorDialog(status, getActivity(),
-					requestCode);
+			Dialog dialog = GooglePlayServicesUtil.getErrorDialog(status,
+					getActivity(), requestCode);
 			dialog.show();
 			mapVerified = false;
 		} else { // Google Play Services are available
 
 			// Getting reference to the SupportMapFragment of activity_main.xml
-			SupportMapFragment fm = (SupportMapFragment) getActivity().getSupportFragmentManager()
-					.findFragmentById(R.id.map);
+			SupportMapFragment fm = (SupportMapFragment) getActivity()
+					.getSupportFragmentManager().findFragmentById(R.id.map);
 
 			// Getting GoogleMap object from the fragment
 			map = fm.getMap();
@@ -77,7 +85,8 @@ public class SizeFragment extends SherlockFragment implements
 
 			// Getting LocationManager object from System Service
 			// LOCATION_SERVICE
-			LocationManager locationManager = (LocationManager) getActivity().getSystemService(getActivity().LOCATION_SERVICE);
+			LocationManager locationManager = (LocationManager) getActivity()
+					.getSystemService(getActivity().LOCATION_SERVICE);
 
 			// Creating a criteria object to retrieve provider
 			Criteria criteria = new Criteria();
@@ -100,8 +109,9 @@ public class SizeFragment extends SherlockFragment implements
 
 		}
 
+		spinner = (Spinner) mainView.findViewById(R.id.craterSpinner);
+		spinner.setOnItemSelectedListener(this);
 	}
-
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -111,11 +121,10 @@ public class SizeFragment extends SherlockFragment implements
 
 		findViews();
 
-		
 		if (mapVerified) {
-			
+
 			try {
-				
+
 				map.animateCamera(CameraUpdateFactory
 						.newLatLngZoom(myLoc, 5.0f));
 			} catch (Exception e) {
@@ -124,11 +133,10 @@ public class SizeFragment extends SherlockFragment implements
 
 			}
 		}
-		
+
 		return mainView;
 
 	}
-
 
 	@Override
 	public void onLocationChanged(Location location) {
@@ -140,7 +148,7 @@ public class SizeFragment extends SherlockFragment implements
 
 			// Getting longitude of the current location
 			double longitude = location.getLongitude();
-			
+
 			myLoc = new LatLng(latitude, longitude);
 
 		} catch (Exception e) {
@@ -174,6 +182,78 @@ public class SizeFragment extends SherlockFragment implements
 	@Override
 	public void onInfoWindowClick(Marker marker) {
 		// TODO Auto-generated method stub
-		
+
+	}
+
+	@Override
+	public void onItemSelected(AdapterView<?> arg0, View v, int pos, long id) {
+		double lat = 1;
+		double lon = 1;
+
+		switch (pos) {
+		case 0:
+			// cardiff
+			lat = 51.482;
+			lon = -3.172;
+			break;
+		case 1:
+			// london
+			lat = 51.514;
+			lon = -0.103;
+			break;
+
+		case 2:
+			// paris
+			lat = 48.856;
+			lon = 2.352;
+			break;
+		case 3:
+			// nyc
+			lat = 40.714;
+			lon = -74.0059;
+			break;
+		case 4:
+			// az
+			lat = 34.0482;
+			lon = -111.091;
+			break;
+		case 5:
+			// wolfe
+			lat = -19.1235;
+			lon = 127.766;
+			break;
+		case 6:
+			// roter kamm
+			lat = -27.769;
+			lon = 16.28238;
+			break;
+		case 7:
+			// mistatin lake, canada
+			lat = 55.911496;
+			lon = -63.2589;
+			break;
+		case 8:
+			// ghana
+			lat = 6.493309;
+			lon = -1.369;
+			break;
+		case 9:
+			// tajikstan
+			lat = 39.0106;
+			lon = 73.563691;
+			break;
+
+		}
+
+		CameraPosition camPos = new CameraPosition(new LatLng(lat, lon), 6,
+				map.getCameraPosition().tilt, map.getCameraPosition().bearing);
+		map.animateCamera(CameraUpdateFactory.newCameraPosition(camPos), 2000,
+				null);
+	}
+
+	@Override
+	public void onNothingSelected(AdapterView<?> arg0) {
+		// TODO Auto-generated method stub
+
 	}
 }

@@ -157,7 +157,7 @@
 		<item>pl</item>
 		<item>sp</item>
 	</string-array>
-	<string-array name="densities">d
+	<string-array name="densities">
 		<item>Ice</item>
 		<item>Porous Rock</item>
 		<item>Dense Rock</item>
@@ -175,6 +175,19 @@
 		<item>Empire State Building (449m)</item>
 		<item>CN Tower (553m)</item>
 		<item>Burj Dubai (~800m)</item>
+	</string-array>
+	
+	<string-array name="cities">
+		<item>Cardiff, Wales</item>
+		<item>London, England</item>
+		<item>Paris, France</item>
+		<item>New York, USA</item>
+		<item>Barringer Meteor Crater, Arizona</item>
+		<item>Wolfe Creek, Australia</item>
+		<item>Roter Kamm, Nambia</item>
+		<item>Mistastin Lake, Canada</item>
+		<item>Bosumtwi, Ghana</item>
+		<item>Karakul, Tajikstan</item>
 	</string-array>
 
 	<string name="map_api_key">AIzaSyBk3qCz3_KxPLZWGfXHXxfzBqfP-5iXkSw</string>

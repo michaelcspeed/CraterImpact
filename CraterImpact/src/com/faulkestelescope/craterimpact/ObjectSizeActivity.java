@@ -31,17 +31,15 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 		setContentView(R.layout.objectsizelayout);
 		findViews();
 
-		 prefs = this.getSharedPreferences(
-			      "com.faulkestelescope.craterimpact", Context.MODE_PRIVATE);
-		
+		prefs = this.getSharedPreferences("com.faulkestelescope.craterimpact",
+				Context.MODE_PRIVATE);
+
 		params = (LayoutParams) imageProjectile.getLayoutParams();
 
 		params.width = 250;
 		params.height = 250;
 		imageProjectile.setLayoutParams(params);
 		setTitle(R.string.lblAstDiam);
-		
-		
 
 	}
 
@@ -67,12 +65,15 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 
 	@Override
 	public void onProgressChanged(SeekBar arg0, int progressNo, boolean arg2) {
+
+		if (progressNo == 0)
+			progressNo = 1;
 		textProjectileSize.setText(progressNo + "m");
 
 		params = (LayoutParams) imageProjectile.getLayoutParams();
 
 		int coef = 30;
-		if (progressNo > 2000 && progressNo < 11000) {
+		if (progressNo > 2000 && progressNo <= 15000) {
 
 			params.width = progressNo / coef;
 			params.height = progressNo / coef;

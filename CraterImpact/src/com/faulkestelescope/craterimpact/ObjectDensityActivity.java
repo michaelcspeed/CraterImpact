@@ -48,8 +48,8 @@ public class ObjectDensityActivity extends Activity implements OnClickListener,
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-			Long l = (long) spinner1.getSelectedItemPosition();
-			prefs.edit().putLong(Globals.projdensKey, l+1).commit();
+			int l = spinner1.getSelectedItemPosition();
+			prefs.edit().putInt(Globals.projdensKey, l+1).commit();
 		
 			Intent intent = new Intent(this, ObjectTargetDensActivity.class);
 			startActivity(intent);
@@ -67,11 +67,11 @@ public class ObjectDensityActivity extends Activity implements OnClickListener,
 			btm = BitmapFactory.decodeResource(getResources(), R.drawable.ice);
 			break;
 		case 1:
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.porousrock);
+			btm = BitmapFactory.decodeResource(getResources(), R.drawable.porous);
 			break;
 		case 2:
 
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.denserock);
+			btm = BitmapFactory.decodeResource(getResources(), R.drawable.dense);
 			break;
 		case 3:
 			btm = BitmapFactory.decodeResource(getResources(), R.drawable.iron);

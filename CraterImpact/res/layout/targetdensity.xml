@@ -5,26 +5,14 @@
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
-	<RelativeLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_above="@+id/bottomItems"
-		android:gravity="center">
-
-		<ImageView
-			android:id="@+id/imageDens"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:scaleType="fitXY"
-			android:layout_centerInParent="true"
-			android:src="@drawable/water" />
-	</RelativeLayout>
-
+	
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true"
 		android:gravity="center"
+		android:id="@+id/lin"
+		android:padding="20dp"
 		android:orientation="vertical">
 
 		<SeekBar
@@ -54,4 +42,20 @@
 			android:text="@string/btSubmit" />
 	</LinearLayout>
 
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/lin"
+		android:gravity="center">
+
+		<ImageView
+			android:id="@+id/imageDens"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="centerInside"
+			android:layout_centerInParent="true"
+			android:src="@drawable/targetwater"/>
+	</RelativeLayout>
+	
 </RelativeLayout>

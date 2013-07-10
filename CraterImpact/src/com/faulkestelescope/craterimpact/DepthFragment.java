@@ -19,7 +19,8 @@ import com.actionbarsherlock.app.SherlockFragment;
 
 import control.DataProvider;
 
-public class DepthFragment extends SherlockFragment implements OnItemSelectedListener {
+public class DepthFragment extends SherlockFragment implements
+		OnItemSelectedListener {
 
 	public static DepthFragment newInstance() {
 		DepthFragment frag = new DepthFragment();
@@ -85,6 +86,11 @@ public class DepthFragment extends SherlockFragment implements OnItemSelectedLis
 		int rpInt = (int) Math.round(rp);
 		int rwInt = (int) Math.round(rw);
 
+		if (rpInt == 0)
+			rpInt = 1;
+		if (rwInt == 0)
+			rwInt = 1;
+		
 		buildingImage.getLayoutParams().height = rpInt;
 		buildingImage.getLayoutParams().width = rwInt;
 

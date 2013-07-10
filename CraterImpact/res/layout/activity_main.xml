@@ -29,8 +29,8 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentTop="true"
 		android:layout_centerHorizontal="true"
-		android:src="@drawable/ic_launcher"
-		android:layout_margin="40dp" />
+		android:src="@drawable/title1"
+		android:layout_margin="10dp" />
 
 	<TextView
 		android:id="@+id/textView1"

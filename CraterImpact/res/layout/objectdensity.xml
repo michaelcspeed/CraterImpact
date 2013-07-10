@@ -43,8 +43,8 @@
 			android:id="@+id/imageDens"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:scaleType="fitXY"
-			android:src="@drawable/pjd1" />
+			android:scaleType="centerInside"
+			android:src="@drawable/ice" />
 
 	</RelativeLayout>
 

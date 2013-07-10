@@ -23,19 +23,19 @@ public class ObjectTargetDensActivity extends Activity implements
 	private Spinner spinner1;
 	private Button buttonNext;
 	private ImageView imageDens;
-	private View waterLevelSlider;
+	private SeekBar waterLevelSlider;
 
 	SharedPreferences prefs;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.targetdensity);
 		findViews();
 		setTitle(R.string.lbTgDens);
-		
-		prefs = this.getSharedPreferences(
-			      "com.faulkestelescope.craterimpact", Context.MODE_PRIVATE);
+
+		prefs = this.getSharedPreferences("com.faulkestelescope.craterimpact",
+				Context.MODE_PRIVATE);
 	}
 
 	private void findViews() {
@@ -51,10 +51,17 @@ public class ObjectTargetDensActivity extends Activity implements
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-			Long l = (long) spinner1.getSelectedItemPosition();
-			prefs.edit().putLong(Globals.targdensKey, l+1).commit();
-			//DataProvider.setImpactDist(spinner1.getSelectedItemPosition());
-			Intent intent = new Intent(this, DistanceFromCrashSiteActivity.class);
+			int l = spinner1.getSelectedItemPosition();
+			int water = waterLevelSlider.getProgress();
+			prefs.edit().putInt(Globals.targdensKey, l + 1).commit();
+			try {
+				prefs.edit().putInt(Globals.waterdepthKey, water).commit();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			// DataProvider.setImpactDist(spinner1.getSelectedItemPosition());
+			Intent intent = new Intent(this,
+					DistanceFromCrashSiteActivity.class);
 			startActivity(intent);
 		}
 	}
@@ -67,16 +74,18 @@ public class ObjectTargetDensActivity extends Activity implements
 		switch (arg2) {
 		case 0:
 			waterLevelSlider.setVisibility(View.VISIBLE);
-			btm = BitmapFactory
-					.decodeResource(getResources(), R.drawable.targetwater);
+			btm = BitmapFactory.decodeResource(getResources(),
+					R.drawable.targetwater);
 			break;
 		case 1:
 			waterLevelSlider.setVisibility(View.INVISIBLE);
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.targetporousrock);
+			btm = BitmapFactory.decodeResource(getResources(),
+					R.drawable.sedimentary);
 			break;
 		case 2:
 			waterLevelSlider.setVisibility(View.INVISIBLE);
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.targetignatiousrock);
+			btm = BitmapFactory.decodeResource(getResources(),
+					R.drawable.dense);
 			break;
 
 		default:

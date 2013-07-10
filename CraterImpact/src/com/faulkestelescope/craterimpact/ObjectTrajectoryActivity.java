@@ -44,7 +44,6 @@ public class ObjectTrajectoryActivity extends Activity implements
 		if (v == buttonNext) {
 			Long l = (long) seekBarTraj.getProgress();
 			prefs.edit().putLong(Globals.trajKey, l).commit();
-//			DataProvider.setProjAngle(seekBarTraj.getProgress());
 			Intent intent = new Intent(this, ObjectDensityActivity.class);
 			startActivity(intent);
 		}
