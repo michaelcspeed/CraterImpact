@@ -114,7 +114,42 @@
 
 <string name="incrater">Estás parado dentro del cráter</string>
 
-<string name="damage1">Daños a </string>
-<string name="damage2">del area de desplome</string>
+<string name="damage1">Daños</string>
+<string name="damage2"> a del area de desplome</string>
+
+	<string-array name="densities">
+		<item>Hielo</item>
+		<item>Roca Porosa</item>
+		<item>Roca Densa</item>
+		<item>Hierro</item>
+	</string-array>
+	<string-array name="targetdensities">
+		<item>Agua</item>
+		<item>Roca Sedimentaria</item>
+		<item>Roca Ígnea</item>
+	</string-array>
+	<string-array name="buildings">
+		<item>Sphinx of Giza (20m)</item>
+		<item>Big Ben (96m)</item>
+		<item>Eiffel Tower (324m)</item>
+		<item>Empire State Building (449m)</item>
+		<item>CN Tower (553m)</item>
+		<item>Burj Dubai (~800m)</item>
+	</string-array>
+	
+	<string-array name="cities">
+		<item>Cardiff, Wales</item>
+		<item>London, England</item>
+		<item>Paris, France</item>
+		<item>New York, USA</item>
+		<item>Barringer Meteor Crater, Arizona</item>
+		<item>Wolfe Creek, Australia</item>
+		<item>Roter Kamm, Nambia</item>
+		<item>Mistastin Lake, Canada</item>
+		<item>Bosumtwi, Ghana</item>
+		<item>Karakul, Tajikstan</item>
+	</string-array>
+	
+
 </resources>
 

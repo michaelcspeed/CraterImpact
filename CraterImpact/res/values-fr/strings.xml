@@ -1,139 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">Calculateur d\'impact</string>
-<string name="btStart">Commencer</string>
-<string name="lblTitle">Calculateur d\'impact</string>
-<string name="lblLanguage">Langue:</string>
+	<string name="app_name">Calculateur d\'impact</string>
+	<string name="btStart">Commencer</string>
+	<string name="lblTitle">Calculateur d\'impact</string>
+	<string name="lblLanguage">Langue:</string>
+
+	<string name="lblTranslation">Traduction:</string>
+
+	<string name="cmdHelp">Aide</string>
+	<string name="inputs">Paramèters initiaux</string>
+	<string name="result">Résultats du calcul</string>
+
+	<string name="lblAstDiam">Diamètre</string>
+	<string name="lblValue">Valeur:</string>
+	<string name="lblWater">Eau</string>
+	<string name="lblSedRock">Roche sédimentaire</string>
+	<string name="lblIgRock">Roche éruptive</string>
+	<string name="lblIce">Glace</string>
+	<string name="lblPorRock">Roche poreuse</string>
+	<string name="lblDensRock">Roche dense</string>
+	<string name="lblIron">Fer</string>
+
+	<string name="txtWaterDepth">Profondeur (m) :</string>
+	<string name="btSubmit">Simuler</string>
+	<string name="lblObVelocity">Vitesse de l\'objet :</string>
+
+	<string name="lblSelect">Faites votre choix ...</string>
+	<string name="lblSphinx">Le Sphynx (20m)</string>
+	<string name="lblBen">Big Ben (96m)</string>
+	<string name="lblEiffel">La tour Eiffel (324m)</string>
+	<string name="lblEmpireSt">Empire State Building (449m)</string>
+	<string name="lblCN">CN Tower (553m)</string>
+	<string name="lblBurj">Burj Dubai (~800m)</string>
+
+	<string name="lblImpactVal">Détails de l\'impact</string>
+	<string name="lblClickMap">Cliquez sur la carte pour placer le cratère...
+	</string>
+	<string name="cvsData">Voir les données</string>
+	<string name="cvsSize">Diamètre du cratère</string>
+	<string name="cvsDepth">Profondeur du cratère</string>
+	<string name="btBack">Recommencer</string>
+	<string name="btReset">Mise à zéro</string>
+	<string name="lbCrater">Le cratère est trop petit pour être visible
+	</string>
+
+	<string name="htParameter">Paramètre</string>
+	<string name="htValue">Valeur</string>
+
+	<string name="lblDistance">Distance de l\'impact</string>
+	<string name="lblInVals">Valeurs initiales</string>
+	<string name="pnlResults">Résultats du calcul</string>
+	<string name="lblCrDepth">Profondeur du cratére</string>
+	<string name="lblLandmark">Choisissez un repère :</string>
+	<string name="lblImpEnergy">Énergie de l\'impact</string>
+	<string name="lblWhatImpactor">Qu\'arrive-t-il à l\'impacteur?</string>
+	<string name="lblFireball">Voit-on une boule de feu?</string>
 
 
-<string name="lblTranslation">Traduction:</string>
+	<string name="lbKE">Énergie cinétique</string>
+	<string name="lbImE">Énergie libérée à l\'impact</string>
+	<string name="lbImM">Masse</string>
+	<string name="lbPjVel">Vitesse du projectile</string>
+	<string name="lbPjAng">Angle d\'impact</string>
+	<string name="lbTgDens">Densité de la cible</string>
+	<string name="lbPjDens">Densité du projectile</string>
+	<string name="lbCrDiam">Diamètre du cratère</string>
+	<string name="lbCrDepth">Profondeur du cratère</string>
+	<string name="lbCrThickness">Épaisseur des ejecta</string>
+	<string name="lbAbBurst">Burst Altitude</string>
+	<string name="lbAbBreak">Altitude de dislocation</string>
+	<string name="lbAbVel">Vitesse de l\'onde de choc</string>
+	<string name="lbAbRichter">Magnitude de Richter</string>
+	<string name="lbAbAmpl">Amplitude de l\'onde sonore</string>
+	<string name="lbFbRad">Rayon</string>
+	<string name="lbFbDuration">Maximum de radiation thermique à:</string>
+	<string name="lbFbExp">Intensité</string>
+	<string name="lbFbPeaktime">Durée de l\'irradiation</string>
+	<string name="lbNoData">Ne s\'applique pas</string>
+	<string name="lbFreq">Quelle fréquence?</string>
+
+	<string name="lbAcknow">Remerciements</string>
+	<string name="hide">Cacher</string>
+	<string name="lbAuthor">Auteurs:</string>
+	<string name="lbBased">D\'après une idée de:</string>
+
+	<string name="projectile1">Le projectile atteint la surface intact, à une
+		vitesse de
+	</string>
+	<string name="projectile2">Énergie dissipée dans l\'atmosphère:</string>
+	<string name="projectile3">Le projectile commence à se briser à l\'altitude de
+	</string>
+	<string name="projectile4">La vitesse du projectile après l\'explosion est de
+	</string>
+	<string name="projectile5">L\'énergie de l\'explosion aérienne est de:
+	</string>
+	<string name="projectile6">De gros fragments frappent la surface de la terre
+		et peuvent créer des impacts secondaires. Un traitement plus précis de
+		l\'entrée dans l\'atmosphère est nécessaire pour estimer précisément
+		la distribution taille-fréquence des fragments de météorites et pour
+		prédire le nombre et la taille des cratères formés.
+	</string>
+	<string name="projectile7">Le projectile atteint la surface de la terre en
+		morceaux. Le projectile frappe la Terre à la vitesse
+	</string>
+
+	<string name="expos1">Les vêtements prennent feu</string>
+	<string name="expos2">Brûlures au troisième degré sur la majeure partie
+		du corps
+	</string>
+	<string name="expos3">Brûlures au second degré sur la majeure partie du
+		corps
+	</string>
+	<string name="expos4">Brûlures au premier degré sur la majeure partie du
+		corps
+	</string>
+	<string name="expos5">Le papier s\'enflamme</string>
+	<string name="expos6">Le contreplaqué s\'enflamme</string>
+	<string name="expos7">Les arbres à feuilles caduques s\'enflamment
+	</string>
+	<string name="expos8">L\'herbe prend feu</string>
+
+	<string name="opress1">Les bâtiments de plusieurs étages en maçonnerie
+		s\'effondrent
+	</string>
+	<string name="opress2">Les bâtiments de plusieurs étages en maçonnerie se
+		fissurent et les cloisons intérieures s\'effondrent
+	</string>
+	<string name="opress3">Les constructions en bois s\'effondrent</string>
+	<string name="opress4">Les cloisons intérieures en bois s\'effondrent et
+		les toits subissent de lourds dégâts
+	</string>
+	<string name="opress5">Les bâtiments de plusieurs étages à structure en
+		acier voient leur structure tordue et certains s\'effondrent
+	</string>
+	<string name="opress6">Les ponts de petite taille s\'effondrent</string>
+	<string name="opress7">Les pont subissent des torsions importantes
+	</string>
+	<string name="opress8">Les ponts en acier s\'effondrent</string>
+	<string name="opress9">Les vitres se brisent</string>
+	<string name="opress10">Les voitures et camions sont déplacés et
+		sérieusement abimés
+	</string>
+	<string name="opress11">Les voitures et camions sont retournés et
+		nécessitent de sérieuses réparations
+	</string>
+	<string name="opress12">Pas de dégâts significatifs de l\'onde de chaleur
+	</string>
+	<string name="opress13">Jusqu\'à 90% des arbres sont abattus, et les autres
+		perdent leurs branches et leurs feuilles
+	</string>
+	<string name="opress14">Jusqu\'à 30 pourcent des arbres sont abattus.
+		Certains des autres perdent leurs feuilles et leurs branches.
+	</string>
+
+	<string name="incrater">Vous êtes à l\'intérieur du cratère</string>
+
+	<string name="damage1">Dégâts</string>
+	<string name="damage2"> à de l\'impact</string>
 
 
-<string name="cmdHelp">Aide</string>
-<string name="inputs">Paramèters initiaux</string>
-<string name="result">Résultats du calcul</string>
+	<string-array name="densities">
+		<item>Glace</item>
+		<item>Roche poreuse</item>
+		<item>Roche dense</item>
+		<item>Fer</item>
+	</string-array>
+	<string-array name="targetdensities">
+		<item>Eau</item>
+		<item>Roche sédimentaire</item>
+		<item>Roche éruptive</item>
+	</string-array>
+	<string-array name="buildings">
+		<item>Le Sphynx (20m)</item>
+		<item>Big Ben (96m)</item>
+		<item>La tour Eiffel (324m)</item>
+		<item>Empire State Building (449m)</item>
+		<item>CN Tower (553m)</item>
+		<item>Burj Dubai (~800m)</item>
+	</string-array>
 
+	<string-array name="cities">
+		<item>Cardiff, Pays de Galles</item>
+		<item>Londres, Angleterre</item>
+		<item>Paris, France</item>
+		<item>New York, Etats-Unis</item>
+		<item>Barringer Meteor Crater, Arizona</item>
+		<item>Wolfe Creek, Australia</item>
+		<item>Roter Kamm, Nambia</item>
+		<item>Mistastin Lake, Canada</item>
+		<item>Bosumtwi, Ghana</item>
+		<item>Karakul, Tadjikstan</item>
+	</string-array>
 
-<string name="lblAstDiam">Diamètre</string>
-<string name="lblValue">Valeur:</string>
-<string name="lblWater">Eau</string>
-<string name="lblSedRock">Roche sédimentaire</string>
-<string name="lblIgRock">Roche éruptive</string>
-<string name="lblIce">Glace</string>
-<string name="lblPorRock">Roche poreuse</string>
-<string name="lblDensRock">Roche dense</string>
-<string name="lblIron">Fer</string>
-
-
-<string name="txtWaterDepth">Profondeur (m) :</string>
-<string name="btSubmit">Simuler</string>
-<string name="lblObVelocity">Vitesse de l\'objet :</string>
-
-
-<string name="lblSelect">Faites votre choix ...</string>
-<string name="lblSphinx">Le Sphynx (20m)</string>
-<string name="lblBen">Big Ben (96m)</string>
-<string name="lblEiffel">La tour Eiffel (324m)</string>
-<string name="lblEmpireSt">Empire State Building (449m)</string>
-<string name="lblCN">CN Tower (553m)</string>
-<string name="lblBurj">Burj Dubai (~800m)</string>
-
-
-<string name="lblImpactVal">Détails de l\'impact</string>
-<string name="lblClickMap">Cliquez sur la carte pour placer le cratère...</string>
-<string name="cvsData">Voir les données</string>
-<string name="cvsSize">Diamètre du cratère</string>
-<string name="cvsDepth">Profondeur du cratère</string>
-<string name="btBack">Recommencer</string>
-<string name="btReset">Mise à zéro</string>
-<string name="lbCrater">Le cratère est trop petit pour être visible</string>
-
-
-<string name="htParameter">Paramètre</string>
-<string name="htValue">Valeur</string>
-
-
-<string name="lblDistance">Distance de l\'impact</string>
-<string name="lblInVals">Valeurs initiales</string>
-<string name="pnlResults">Résultats du calcul</string>
-<string name="lblCrDepth">Profondeur du cratére</string>
-<string name="lblLandmark">Choisissez un repère :</string>
-<string name="lblImpEnergy">Énergie de l\'impact</string>
-<string name="lblWhatImpactor">Qu\'arrive-t-il à l\'impacteur?</string>
-<string name="lblFireball">Voit-on une boule de feu?</string>
-
-
-
-
-<string name="lbKE">Énergie cinétique</string>
-<string name="lbImE">Énergie libérée à l\'impact</string>
-<string name="lbImM">Masse</string>
-<string name="lbPjVel">Vitesse du projectile</string>
-<string name="lbPjAng">Angle d\'impact</string>
-<string name="lbTgDens">Densité de la cible</string>
-<string name="lbPjDens">Densité du projectile</string>
-<string name="lbCrDiam">Diamètre du cratère</string>
-<string name="lbCrDepth">Profondeur du cratère</string>
-<string name="lbCrThickness">Épaisseur des ejecta</string>
-<string name="lbAbBurst">Burst Altitude</string>
-<string name="lbAbBreak">Altitude de dislocation</string>
-<string name="lbAbVel">Vitesse de l\'onde de choc</string>
-<string name="lbAbRichter">Magnitude de Richter</string>
-<string name="lbAbAmpl">Amplitude de l\'onde sonore</string>
-<string name="lbFbRad">Rayon</string>
-<string name="lbFbDuration">Maximum de radiation thermique à:</string>
-<string name="lbFbExp">Intensité</string>
-<string name="lbFbPeaktime">Durée de l\'irradiation</string>
-<string name="lbNoData">Ne s\'applique pas</string>
-<string name="lbFreq">Quelle fréquence?</string>
-
-
-<string name="lbAcknow">Remerciements</string>
-<string name="hide">Cacher</string>
-<string name="lbAuthor">Auteurs:</string>
-<string name="lbBased">D\'après une idée de:</string>
-
-
-<string name="projectile1">Le projectile atteint la surface intact, à une vitesse de</string>
-<string name="projectile2">Énergie dissipée dans l\'atmosphère:</string>
-<string name="projectile3">Le projectile commence à se briser à l\'altitude de </string>
-<string name="projectile4">La vitesse du projectile après l\'explosion est de</string>
-<string name="projectile5">L\'énergie de l\'explosion aérienne est de:</string>
-<string name="projectile6">De gros fragments frappent la surface de la terre et peuvent créer des impacts secondaires. Un traitement plus précis de l\'entrée dans l\'atmosphère est nécessaire pour estimer précisément la distribution taille-fréquence  des fragments de météorites et pour prédire le nombre et la taille des cratères formés.</string>
-<string name="projectile7">Le projectile atteint la surface de la terre en morceaux. Le projectile frappe la Terre à la vitesse </string>
-
-
-<string name="expos1">Les vêtements prennent feu</string>
-<string name="expos2">Brûlures au troisième degré sur la majeure partie du corps</string>
-<string name="expos3">Brûlures au second degré sur la majeure partie du corps</string>
-<string name="expos4">Brûlures au premier degré sur la majeure partie du corps</string>
-<string name="expos5">Le papier s\'enflamme</string>
-<string name="expos6">Le contreplaqué s\'enflamme</string>
-<string name="expos7">Les arbres à feuilles caduques s\'enflamment</string>
-<string name="expos8">L\'herbe prend feu</string>
-
-
-<string name="opress1">Les bâtiments de plusieurs étages en maçonnerie s\'effondrent</string>
-<string name="opress2">Les bâtiments de plusieurs étages en maçonnerie se fissurent et les cloisons intérieures s\'effondrent</string>
-<string name="opress3">Les constructions en bois s\'effondrent</string>
-<string name="opress4">Les cloisons intérieures en bois s\'effondrent et les toits subissent de lourds dégâts</string>
-<string name="opress5">Les bâtiments de plusieurs étages à structure en acier voient leur structure tordue et certains s\'effondrent</string>
-<string name="opress6">Les ponts de petite taille s\'effondrent</string>
-<string name="opress7">Les pont subissent des torsions importantes</string>
-<string name="opress8">Les ponts en acier s\'effondrent</string>
-<string name="opress9">Les vitres se brisent</string>
-<string name="opress10">Les voitures et camions sont déplacés et sérieusement abimés</string>
-<string name="opress11">Les voitures et camions sont retournés et nécessitent de sérieuses réparations</string>
-<string name="opress12">Pas de dégâts significatifs de l\'onde de chaleur</string>
-<string name="opress13">Jusqu\'à 90% des arbres sont abattus, et les autres perdent leurs branches et leurs feuilles</string>
-<string name="opress14">Jusqu\'à 30 pourcent des arbres sont abattus. Certains des autres perdent leurs feuilles et leurs branches.</string>
-
-
-<string name="incrater">Vous êtes à l\'intérieur du cratère</string>
-
-
-<string name="damage1">Dégâts à</string>
-<string name="damage2">de l\'impact</string>
 </resources>
 
 

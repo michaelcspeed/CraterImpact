@@ -5,7 +5,7 @@
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
-	
+
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -15,21 +15,19 @@
 		android:padding="20dp"
 		android:orientation="vertical">
 
-		<SeekBar
+		<org.holoeverywhere.widget.SeekBar
 			android:id="@+id/seekBarWater"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_above="@id/spinnerDensities"
 			android:layout_marginLeft="20dp"
 			android:layout_marginRight="20dp"
-			android:max="90"
+			android:max="2000"
 			android:progress="0"
 			android:visibility="visible" />
 		<Spinner
 			android:id="@+id/Spinner1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_below="@+id/spinnerDensities"
 			android:layout_marginLeft="20dp"
 			android:layout_marginRight="20dp"
 			android:entries="@array/targetdensities" />
@@ -41,8 +39,10 @@
 			android:layout_centerHorizontal="true"
 			android:text="@string/btSubmit" />
 	</LinearLayout>
-
 	
+	
+
+
 	<RelativeLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
@@ -55,7 +55,47 @@
 			android:layout_height="wrap_content"
 			android:scaleType="centerInside"
 			android:layout_centerInParent="true"
-			android:src="@drawable/targetwater"/>
+			android:src="@drawable/targetwater" />
+		
+	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/lin"
+		android:layout_centerInParent="true"
+		android:gravity="center">
+
+		<com.faulkestelescope.craterimpact.WaterView
+			android:id="@+id/waterView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scaleType="centerInside"
+			android:layout_centerInParent="true" />
+		
 	</RelativeLayout>
 	
+	</RelativeLayout>
+	
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:layout_marginBottom="40dp">
+
+		<TextView
+			android:id="@+id/waterLevelText"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:textSize="60sp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:text="0 m" />
+
+
+	</RelativeLayout>
+	
+
 </RelativeLayout>

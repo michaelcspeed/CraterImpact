@@ -58,9 +58,11 @@ public class DepthFragment extends SherlockFragment implements
 
 		findViews();
 
+
 		return mainView;
 
 	}
+
 
 	@Override
 	public void onItemSelected(AdapterView<?> parentView, View arg1,

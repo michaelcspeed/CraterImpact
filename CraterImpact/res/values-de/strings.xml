@@ -1,143 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">Einschlagsrechner</string>
-<string name="btStart">Weiter</string>
-<string name="lblTitle">Einschlagsrechner</string>
-<string name="lblLanguage">Sprache:</string>
-<string name="lblTranslation">Übersetzung:</string>
-<string name="cmdHelp">Hilfe</string>
-<string name="inputs">Eingabewerte</string>
-<string name="result">Ergebnis</string>
+	<string name="app_name">Einschlagsrechner</string>
+	<string name="btStart">Weiter</string>
+	<string name="lblTitle">Einschlagsrechner</string>
+	<string name="lblLanguage">Sprache:</string>
+	<string name="lblTranslation">Übersetzung:</string>
+	<string name="cmdHelp">Hilfe</string>
+	<string name="inputs">Eingabewerte</string>
+	<string name="result">Ergebnis</string>
+
+	<string name="lblAstDiam">Durchmesser des Asteroiden</string>
+	<string name="lblValue">Wert:</string>
+	<string name="lblWater">Wasser</string>
+	<string name="lblSedRock">Sedimentgestein</string>
+	<string name="lblIgRock">Vulkanisches Gestein</string>
+	<string name="lblIce">Eis</string>
+	<string name="lblPorRock">Poröses Gestein</string>
+	<string name="lblDensRock">Massives Gestein</string>
+	<string name="lblIron">Eisen</string>
+
+	<string name="txtWaterDepth">Wassertiefe (m):</string>
+	<string name="btSubmit">Versuch starten</string>
+	<string name="lblObVelocity">Objektgeschwindigkeit</string>
+
+	<string name="lblSelect">Bitte auswählen...</string>
+	<string name="lblSphinx">Sphinx von Gizeh (20 m)</string>
+	<string name="lblBen">Big Ben (96 m)</string>
+	<string name="lblEiffel">Eiffelturm (324 m)</string>
+	<string name="lblEmpireSt">Empire State Building (449 m)</string>
+	<string name="lblCN">Canadian National Tower (553 m)</string>
+	<string name="lblBurj">Turm von Dubai (ca. 800 m)</string>
+
+	<string name="lblImpactVal">Einschlagswerte</string>
+	<string name="lblClickMap">Aufschlagsort bitte auf der Karte anklicken...
+	</string>
+	<string name="cvsData">Die Daten in der Übersicht</string>
+	<string name="cvsSize">Kratergröße</string>
+	<string name="cvsDepth">Kratertiefe</string>
+	<string name="btBack">Zurück</string>
+	<string name="btReset">Zurücksetzen</string>
+	<string name="lbCrater">Krater ist zu klein und daher nicht sichtbar.
+	</string>
+
+	<string name="htParameter">Parameter</string>
+	<string name="htValue">Wert</string>
+
+	<string name="lblDistance">Entfernung vom Kraterort</string>
+	<string name="lblInVals">Die eingegebenen Werte</string>
+	<string name="pnlResults">Ergebnis</string>
+	<string name="lblCrDepth">Kratertiefe</string>
+	<string name="lblLandmark">Wahrzeichen auswählen:</string>
+	<string name="lblImpEnergy">Energie des Einschlags</string>
+	<string name="lblWhatImpactor">Was geschieht mit dem Geschoss?</string>
+	<string name="lblFireball">Ist ein Feuerball sichtbar?</string>
 
 
-<string name="errPjDens">Bitte Dichte des Geschosses eingeben</string>
-<string name="errTgDens">Bitte Dichte des Untergrunds eingeben</string>
-<string name="errPjDiam">Bitte Durchmesser des Asteroiden eingeben</string>
-<string name="errPjAng">Bitte Winkel des Einschlags eingeben</string>
-<string name="errPjVel">Bitte Geschwindigkeit des Geschosses eingeben</string>
-<string name="errTitle">Zusätzliche Angaben erforderlich</string>
+	<string name="lbKE">Bewegungsenergie</string>
+	<string name="lbImE">Energie des Einschlags</string>
+	<string name="lbImM">Masse</string>
+	<string name="lbPjVel">Geschwindigkeit des Geschosses</string>
+	<string name="lbPjAng">Winkel des Einschlags</string>
+	<string name="lbTgDens">Dichte des Untergrunds</string>
+	<string name="lbPjDens">Dichte des Geschosses</string>
+	<string name="lbCrDiam">Kraterbreite</string>
+	<string name="lbCrDepth">Kratertiefe</string>
+	<string name="lbCrThickness">Dicke der Auswurfschicht</string>
+	<string name="lbAbBurst">Höhe, die der Kraterauswurf erreicht</string>
+	<string name="lbAbBreak">Höhe, in der das Geschoss auseinander bricht
+	</string>
+	<string name="lbAbVel">Windgeschwindigkeit</string>
+	<string name="lbAbRichter">Richterstärke</string>
+	<string name="lbAbAmpl">Stärke der Schallwelle</string>
+	<string name="lbFbRad">Radius</string>
+	<string name="lbFbDuration">Höchste Wärmestrahlung bei</string>
+	<string name="lbFbExp">Belastung</string>
+	<string name="lbFbPeaktime">Dauer der Strahlung</string>
+	<string name="lbNoData">Trifft nicht zu</string>
+	<string name="lbFreq">Wahrscheinlichkeit: alle</string>
+
+	<string name="lbAcknow">Dank:</string>
+	<string name="hide">ausblenden</string>
+	<string name="lbAuthor">Die Autoren des neu gestalteten Einschlagsrechners
+		sind:</string>
+	<string name="lbBased">Die Autoren des Originalprogramms sind:</string>
+
+	<string name="projectile1">Das Projektil landet unbeschädigt, mit einer
+		Geschwindigkeit von</string>
+	<string name="projectile2">Die in der Atmosphäre abgegebene Energie beträgt
+	</string>
+	<string name="projectile3">Das Geschoss bricht auseinander in einer Höhe von
+	</string>
+	<string name="projectile4">Die Geschwindigkeit der einzelnen Stücke des
+		Geschosses nach dem Auseinanderbrechen beträgt</string>
+	<string name="projectile5">Die Energie der Druckwelle beträgt</string>
+	<string name="projectile6">Große Teile schlagen auf der Erdoberfläche ein und
+		könnten ein Krater-Streufeld erzeugen. Um die Anzahl und Größe der
+		Bruchstücke des Geschosses zu berechnen, und auch um die Größe und
+		Anzahl der Krater des Streufeldes zu berechnen, ist eine genauere
+		Analyse des Eintritts in die Atmosphäre erforderlich.</string>
+	<string name="projectile7">Das Geschoss schlägt zersplittert ein. Das Geschoss
+		trifft auf die Oberfläche mit einer Geschwindigkeit von </string>
+
+	<string name="expos1">Kleidung fängt Feuer</string>
+	<string name="expos2">Menschen erleiden großflächige Verbrennungen 3.
+		Grades</string>
+	<string name="expos3">Menschen erleiden großflächige Verbrennungen 2.
+		Grades</string>
+	<string name="expos4">Menschen erleiden großflächige Verbrennungen 1.
+		Grades </string>
+	<string name="expos5">Zeitung fängt Feuer</string>
+	<string name="expos6">Sperrholz fängt Feuer</string>
+	<string name="expos7">Laubbäume fangen Feuer</string>
+	<string name="expos8">Gras fängt Feuer</string>
+
+	<string name="opress1">Mehrstöckige, durch Wände getragene Gebäude stürzen
+		zusammen</string>
+	<string name="opress2">Mehrstöckige, durch Wände getragene Gebäude
+		bekommen starke Risse, Trennwände stürzen um</string>
+	<string name="opress3">Holzrahmengebäude stürzen nahezu komplett ein
+	</string>
+	<string name="opress4">Trennwände von Holzrahmengebäuden stürzen um. Dach
+		wird schwer beschädigt</string>
+	<string name="opress5">Die Stahlrahmenkonstruktion von mehrstöckigen
+		Bürogebäuden verformt sich extrem und beginnt einzustürzen</string>
+	<string name="opress6">Kleine Brücken stürzen ein</string>
+	<string name="opress7">Brückenverstrebungen werden stark verbogen</string>
+	<string name="opress8">Stahlrahmenbrücken stürzen ein</string>
+	<string name="opress9">Fensterscheiben zerbersten</string>
+	<string name="opress10">Autos und Lastwagen werden mitgerissen,
+		Totalschaden</string>
+	<string name="opress11">Autos und Lastwagen werden umgeworfen und
+		mitgerissen. Aufwendige Reparaturen.</string>
+	<string name="opress12">Keine besonderen Schäden durch die Druckwelle
+	</string>
+	<string name="opress13">Bis zu 90 % der Bäume stürzen um; die übrigen Bäume
+		verlieren ihre Äste und Blätter</string>
+	<string name="opress14">Ca. 30 % der Bäume stürzen um; die übrigen Bäume
+		verlieren einige Äste und Blätter </string>
+
+	<string name="incrater">Sie stehen im Inneren des Kraters</string>
+
+	<string name="damage1">Schäden</string>
+	<string name="damage2">Welche Schäden entstehen von der Einschlagstelle
+		entfernt?</string>
 
 
-<string name="lblAstDiam">Durchmesser des Asteroiden</string>
-<string name="lblValue">Wert:</string>
-<string name="lblWater">Wasser</string>
-<string name="lblSedRock">Sedimentgestein</string>
-<string name="lblIgRock">Vulkanisches Gestein</string>
-<string name="lblIce">Eis</string>
-<string name="lblPorRock">Poröses Gestein</string>
-<string name="lblDensRock">Massives Gestein</string>
-<string name="lblIron">Eisen</string>
+	<string name="lblWater">Wasser</string>
+	<string name="lblSedRock">Sedimentgestein</string>
+	<string name="lblIgRock">Vulkanisches Gestein</string>
+	<string name="lblIce">Eis</string>
+	<string name="lblPorRock">Poröses Gestein</string>
+	<string name="lblDensRock">Massives Gestein</string>
+	<string name="lblIron">Eisen</string>
 
 
-<string name="txtWaterDepth">Wassertiefe (m):</string>
-<string name="btSubmit">Versuch starten</string>
-<string name="lblObVelocity">Objektgeschwindigkeit</string>
+	<string-array name="densities">
+		<item>Eis</item>
+		<item>Poröses Gestein</item>
+		<item>Massives Gestein</item>
+		<item>Eisen</item>
+	</string-array>
+	<string-array name="targetdensities">
+		<item>Wasser</item>
+		<item>Sedimentgestein</item>
+		<item>Vulkanisches</item>
+	</string-array>
+	<string-array name="buildings">
+		<item>Sphinx of Giza (20m)</item>
+		<item>Big Ben (96m)</item>
+		<item>Eiffelturm (324m)</item>
+		<item>Empire State Building (449m)</item>
+		<item>CN Tower (553m)</item>
+		<item>Burj Dubai (~800m)</item>
+	</string-array>
+
+	<string-array name="cities">
+		<item>Cardiff, Wales</item>
+		<item>London, England</item>
+		<item>Paris, Frankreich</item>
+		<item>New York, USA</item>
+		<item>Barringer Meteor Crater, Arizona</item>
+		<item>Wolfe Creek, Australien</item>
+		<item>Roter Kamm, Nambia</item>
+		<item>Mistastin Lake, Kanada</item>
+		<item>Bosumtwi, Ghana</item>
+		<item>Karakul, Tajikstan</item>
+	</string-array>
 
 
-<string name="lblSelect">Bitte auswählen...</string>
-<string name="lblSphinx">Sphinx von Gizeh (20 m)</string>
-<string name="lblBen">Big Ben (96 m)</string>
-<string name="lblCathCol">Kölner Dom (157 m)</string>
-<string name="lblEiffel">Eiffelturm (324 m)</string>
-<string name="lblEmpireSt">Empire State Building (449 m)</string>
-<string name="lblCN">Canadian National Tower (553 m)</string>
-<string name="lblBurj">Turm von Dubai (ca. 800 m)</string>
-
-
-<string name="lblImpactVal">Einschlagswerte</string>
-<string name="lblClickMap">Aufschlagsort bitte auf der Karte anklicken...</string>
-<string name="cvsData">Die Daten in der Übersicht</string>
-<string name="cvsSize">Kratergröße</string>
-<string name="cvsDepth">Kratertiefe</string>
-<string name="btBack">Zurück</string>
-<string name="btReset">Zurücksetzen</string>
-<string name="lbCrater">Krater ist zu klein und daher nicht sichtbar.</string>
-
-
-<string name="htParameter">Parameter</string>
-<string name="htValue">Wert</string>
-
-
-<string name="lblDistance">Entfernung vom Kraterort</string>
-<string name="lblInVals">Die eingegebenen Werte</string>
-<string name="pnlResults">Ergebnis</string>
-<string name="lblCrDepth">Kratertiefe</string>
-<string name="lblLandmark">Wahrzeichen auswählen:</string>
-<string name="lblImpEnergy">Energie des Einschlags</string>
-<string name="lblWhatImpactor">Was geschieht mit dem Geschoss?</string>
-<string name="lblFireball">Ist ein Feuerball sichtbar?</string>
-
-
-
-
-<string name="lbKE">Bewegungsenergie</string>
-<string name="lbImE">Energie des Einschlags</string>
-<string name="lbImM">Masse</string>
-<string name="lbPjVel">Geschwindigkeit des Geschosses</string>
-<string name="lbPjAng">Winkel des Einschlags</string>
-<string name="lbTgDens">Dichte des Untergrunds</string>
-<string name="lbPjDens">Dichte des Geschosses</string>
-<string name="lbCrDiam">Kraterbreite</string>
-<string name="lbCrDepth">Kratertiefe</string>
-<string name="lbCrThickness">Dicke der Auswurfschicht</string>
-<string name="lbAbBurst">Höhe, die der Kraterauswurf erreicht</string>
-<string name="lbAbBreak">Höhe, in der das Geschoss auseinander bricht </string>
-<string name="lbAbVel">Windgeschwindigkeit</string>
-<string name="lbAbRichter">Richterstärke</string>
-<string name="lbAbAmpl">Stärke der Schallwelle</string>
-<string name="lbFbRad">Radius</string>
-<string name="lbFbDuration">Höchste Wärmestrahlung bei</string>
-<string name="lbFbExp">Belastung</string>
-<string name="lbFbPeaktime">Dauer der Strahlung</string>
-<string name="lbNoData">Trifft nicht zu</string>
-<string name="lbFreq">Wahrscheinlichkeit: alle</string>
-
-
-<string name="lbAcknow">Dank:</string>
-<string name="hide">ausblenden</string>
-<string name="lbAuthor">Die Autoren des neu gestalteten Einschlagsrechners sind:</string>
-<string name="lbBased">Die Autoren des Originalprogramms sind:</string>
-<string name="lbCreds">Die wissenschaftlichen Grundlagen für den Rechner kommen von der Arbeitsgruppe von Professor H. Jay Melosh an der Universität von Arizona.</string>
-
-
-<string name="projectile1">Das Projektil landet unbeschädigt, mit einer Geschwindigkeit von</string>
-<string name="projectile2">Die in der Atmosphäre abgegebene Energie beträgt</string>
-<string name="projectile3">Das Geschoss bricht auseinander in einer Höhe von </string>
-<string name="projectile4">Die Geschwindigkeit der einzelnen Stücke des Geschosses nach dem Auseinanderbrechen beträgt</string>
-<string name="projectile5">Die Energie der Druckwelle beträgt</string>
-<string name="projectile6">Große Teile schlagen auf der Erdoberfläche ein und könnten ein Krater-Streufeld erzeugen. Um die Anzahl und Größe der Bruchstücke des Geschosses zu berechnen, und auch um die Größe und Anzahl der Krater des Streufeldes zu berechnen, ist eine genauere Analyse des Eintritts in die Atmosphäre erforderlich.</string>
-<string name="projectile7">Das Geschoss schlägt zersplittert ein. Das Geschoss trifft auf die Oberfläche mit einer Geschwindigkeit von </string>
-
-
-<string name="expos1">Kleidung fängt Feuer</string>
-<string name="expos2">Menschen erleiden großflächige Verbrennungen 3. Grades</string>
-<string name="expos3">Menschen erleiden großflächige Verbrennungen 2. Grades</string>
-<string name="expos4">Menschen erleiden großflächige Verbrennungen 1. Grades </string>
-<string name="expos5">Zeitung fängt Feuer</string>
-<string name="expos6">Sperrholz fängt Feuer</string>
-<string name="expos7">Laubbäume fangen Feuer</string>
-<string name="expos8">Gras fängt Feuer</string>
-
-
-<string name="opress1">Mehrstöckige, durch Wände getragene Gebäude stürzen zusammen</string>
-<string name="opress2">Mehrstöckige, durch Wände getragene Gebäude bekommen starke Risse, Trennwände stürzen um</string>
-<string name="opress3">Holzrahmengebäude stürzen nahezu komplett ein</string>
-<string name="opress4">Trennwände von Holzrahmengebäuden stürzen um. Dach wird schwer beschädigt</string>
-<string name="opress5">Die Stahlrahmenkonstruktion von mehrstöckigen Bürogebäuden verformt sich extrem und beginnt einzustürzen</string>
-<string name="opress6">Kleine Brücken stürzen ein</string>
-<string name="opress7">Brückenverstrebungen werden stark verbogen</string>
-<string name="opress8">Stahlrahmenbrücken stürzen ein</string>
-<string name="opress9">Fensterscheiben zerbersten</string>
-<string name="opress10">Autos und Lastwagen werden mitgerissen, Totalschaden</string>
-<string name="opress11">Autos und Lastwagen werden umgeworfen und mitgerissen. Aufwendige Reparaturen.</string>
-<string name="opress12">Keine besonderen Schäden durch die Druckwelle</string>
-<string name="opress13">Bis zu 90 % der Bäume stürzen um; die übrigen Bäume verlieren ihre Äste und Blätter</string>
-<string name="opress14">Ca. 30 % der Bäume stürzen um; die übrigen Bäume verlieren einige Äste und Blätter </string>
-
-
-<string name="incrater">Sie stehen im Inneren des Kraters</string>
-
-
-<string name="damage1">Welche Schäden entstehen </string>
-<string name="damage2">von der Einschlagstelle entfernt?</string>
 </resources>

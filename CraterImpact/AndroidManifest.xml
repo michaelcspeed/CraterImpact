@@ -28,7 +28,7 @@
 		android:targetSdkVersion="16" />
 
 	<application
-		android:name="org.holoeverywhere.app.Application"
+		android:name="MyApplication"
 		android:allowBackup="true"
 		android:debuggable="true"
 		android:icon="@drawable/ic_launcher"
@@ -54,6 +54,7 @@
 		<activity android:name="com.faulkestelescope.craterimpact.ObjectDensityActivity">
 		</activity>
 		<activity android:name="com.faulkestelescope.craterimpact.ObjectTargetDensActivity">
+
 		</activity>
 		<activity
 			android:name="com.faulkestelescope.craterimpact.DistanceFromCrashSiteActivity">

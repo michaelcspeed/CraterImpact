@@ -136,7 +136,7 @@
 	<string name="incrater">You are standing inside the crater</string>
 	<string name="showCrater">Show Crater</string>
 	<string name="hideCrater">Hide Crater</string>
-	<string name="damage1">Damage at </string>
+	<string name="damage1">Damage</string>
 	<string name="damage2">from crash site</string>
 	
 	<string name="damage">Damage</string>
@@ -190,64 +190,8 @@
 		<item>Karakul, Tajikstan</item>
 	</string-array>
 
-	<string name="map_api_key">AIzaSyBk3qCz3_KxPLZWGfXHXxfzBqfP-5iXkSw</string>
+	<string name="map_api_key">AIzaSyDvoXofFNevxj4Aj8LjkJ1eawySMLfH1dg</string>
 
-	<string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing
-		elit. Integer eget dui sit amet est bibendum suscipit. Nullam
-		venenatis odio ac velit consectetur luctus. Vestibulum ante ipsum
-		primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-		Proin a dolor id massa porta ornare id faucibus neque. Fusce egestas
-		consequat mauris, sit amet dignissim nibh imperdiet ut. Aenean sapien
-		mi, congue nec suscipit nec, elementum a tortor. Sed tincidunt, lorem
-		quis adipiscing tristique, velit nibh bibendum enim, ut elementum
-		metus magna at dolor. Nullam posuere, diam at rhoncus volutpat, lorem
-		risus ultricies est, nec hendrerit est dui eu nibh. Class aptent
-		taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-		himenaeos. Mauris eget nunc vel ligula sollicitudin consequat.
-		Maecenas molestie, sapien eu faucibus rhoncus, leo turpis tristique
-		est, sit amet imperdiet tortor massa vel augue.
-		Suspendisse potenti.
-		Sed ac mauris eget nisi consectetur varius quis id velit.
-		Quisque at
-		nulla at neque aliquet ullamcorper sit amet placerat ante.
-		Aliquam
-		sodales adipiscing lacinia. Morbi eu nulla nulla. Phasellus
-		lorem nisi,
-		rhoncus et blandit id, lacinia quis nulla. Ut at dui eget
-		justo
-		bibendum convallis. Suspendisse urna enim, cursus vitae viverra
-		suscipit, consequat a est. Morbi at erat nibh, tristique consequat
-		ligula. Maecenas non tortor non sapien tristique lacinia.
-		Nulla
-		vehicula risus sed urna gravida auctor et non mauris. Aenean
-		adipiscing porta pharetra. Duis posuere urna a massa gravida egestas.
-		Quisque id nisl ante. Proin pretium faucibus varius. Nunc pretium
-		iaculis urna eu tristique. Vivamus at accumsan nisi. Proin ut libero
-		ut ligula elementum tempus. Curabitur elementum aliquam adipiscing.
-		Cras magna sem, semper vel rhoncus condimentum, adipiscing ac nunc.
-		Vivamus vestibulum, leo vel hendrerit volutpat, neque nisl venenatis
-		orci, eu aliquet sapien neque at enim. Etiam a magna arcu. Vivamus leo
-		lacus, malesuada condimentum pulvinar at, ornare in neque. Integer
-		odio justo, condimentum at tempor non, aliquet vitae massa. Integer
-		erat odio, tincidunt eget ornare sed, gravida tempus turpis.
-		Praesent
-		accumsan lorem interdum mauris feugiat tincidunt. Nulla egestas
-		lacinia est, a gravida turpis sodales et. Sed sit amet lorem id ipsum
-		eleifend ultrices in ut massa. Integer semper placerat mi eu
-		vulputate. Vestibulum placerat nisl id tortor pretium tempus.
-		Phasellus vestibulum sollicitudin felis, eu aliquam dui hendrerit
-		elementum. Aenean malesuada fermentum neque vel consequat.
-		Vestibulum
-		et eros nisi. Aliquam at augue vel risus congue tempus. Proin eu
-		ornare lacus. Sed elementum facilisis nulla, vel condimentum quam
-		molestie id. Ut rutrum scelerisque semper. Etiam at lorem et ipsum
-		faucibus blandit vitae semper tellus. In turpis nunc, euismod sed
-		imperdiet eu, ornare sed orci. Maecenas dapibus felis a enim luctus
-		lobortis. Nullam cursus nunc ut magna venenatis blandit imperdiet nisi
-		vestibulum. Sed interdum vulputate lacinia. Curabitur sollicitudin
-		nunc quis turpis porta eu viverra sapien egestas. Vestibulum blandit
-		molestie nulla, et luctus justo convallis tempus. Vivamus in augue
-		tellus, congue eleifend mi.
-	</string>
+	
 
 </resources>

@@ -66,8 +66,10 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	@Override
 	public void onProgressChanged(SeekBar arg0, int progressNo, boolean arg2) {
 
+		progressNo *= 100;
+
 		if (progressNo == 0)
-			progressNo = 1;
+			progressNo = 100;
 		textProjectileSize.setText(progressNo + "m");
 
 		params = (LayoutParams) imageProjectile.getLayoutParams();

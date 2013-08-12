@@ -2,6 +2,7 @@
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
+	android:padding="5dp"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 	<ScrollView
@@ -13,9 +14,10 @@
 			android:layout_height="match_parent">
 			<TextView
 				android:id="@+id/resultstext"
+				android:textSize="23sp"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:text="@string/lorem" />
+				android:text="@string/projectile1" />
 		</LinearLayout>
 	</ScrollView>
 

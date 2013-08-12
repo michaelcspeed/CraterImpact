@@ -52,7 +52,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		showSplashScreen();
+		//showSplashScreen();
 
 		setContentView(R.layout.activity_main);
 		findViews();

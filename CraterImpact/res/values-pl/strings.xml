@@ -134,5 +134,41 @@
 
 <string name="damage1">Zniszczenia</string>
 <string name="damage2">od miejsca upadku</string>
+
+
+	<string-array name="densities">
+		<item>Lód</item>
+		<item>Skały porowate</item>
+		<item>Skały masywne</item>
+		<item>Żelazo</item>
+	</string-array>
+	<string-array name="targetdensities">
+		<item>Woda</item>
+		<item>Skały osadowe</item>
+		<item>Skały magmowe</item>
+	</string-array>
+	
+	<string-array name="buildings">
+		<item>Sphinx, Giza (20m)</item>
+		<item>Big Ben (96m)</item>
+		<item>Wieża Eiffel (324m)</item>
+		<item>Empire State Building (449m)</item>
+		<item>CN Tower (553m)</item>
+		<item>Burj Dubai (~800m)</item>
+	</string-array>
+	
+	<string-array name="cities">
+		<item>Cardiff, Walia</item>
+		<item>Londyn, Anglia</item>
+		<item>Paryż, Francja.</item>
+		<item>New York, USA</item>
+		<item>Barringer Meteor Crater, Arizona</item>
+		<item>Wolfe Creek, Australia</item>
+		<item>Roter Kamm, Nambia</item>
+		<item>Mistastin Lake, Kanada</item>
+		<item>Bosumtwi, Ghana</item>
+		<item>Karakul, Tajikstan</item>
+	</string-array>
+
 </resources>
 

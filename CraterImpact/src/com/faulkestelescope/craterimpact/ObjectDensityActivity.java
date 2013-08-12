@@ -10,11 +10,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+
+import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
 public class ObjectDensityActivity extends Activity implements OnClickListener,
 		OnItemSelectedListener {
@@ -22,8 +28,10 @@ public class ObjectDensityActivity extends Activity implements OnClickListener,
 	private Spinner spinner1;
 	private Button buttonNext;
 	private ImageView imageDens;
-	
+	private DisplayImageOptions options;
+
 	SharedPreferences prefs;
+	private int imageUri;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -60,27 +68,26 @@ public class ObjectDensityActivity extends Activity implements OnClickListener,
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
 
-		Bitmap btm = null;
 		switch (arg2) {
 		case 0:
 
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.ice);
+			imageUri = R.drawable.ice;
 			break;
 		case 1:
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.porous);
+			imageUri =   R.drawable.porous;
 			break;
 		case 2:
 
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.dense);
+			imageUri = R.drawable.dense;
 			break;
 		case 3:
-			btm = BitmapFactory.decodeResource(getResources(), R.drawable.iron);
+			imageUri = R.drawable.iron;
 			break;
 		default:
 			break;
-		}
-
-		imageDens.setImageBitmap(btm);
+		}	
+	
+		imageDens.setImageResource(imageUri);
 	}
 
 	@Override

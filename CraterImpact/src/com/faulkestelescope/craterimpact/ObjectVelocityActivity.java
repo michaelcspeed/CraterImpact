@@ -74,7 +74,7 @@ public class ObjectVelocityActivity extends Activity implements
 		if (progressNo == 0)
 			progressNo = 1;
 
-		textVelocity.setText(progressNo + "kmps");
+		textVelocity.setText(progressNo + "km/s");
 
 		// Decode Image using Bitmap factory.
 		bMap = BitmapFactory.decodeResource(getResources(),

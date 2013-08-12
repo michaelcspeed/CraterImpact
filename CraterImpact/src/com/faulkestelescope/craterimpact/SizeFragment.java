@@ -2,6 +2,7 @@ package com.faulkestelescope.craterimpact;
 
 import org.holoeverywhere.widget.AdapterView;
 import org.holoeverywhere.widget.AdapterView.OnItemSelectedListener;
+import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.Spinner;
 
 import android.app.Dialog;
@@ -12,21 +13,29 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
+import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.GroundOverlay;
+import com.google.android.gms.maps.model.GroundOverlayOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
+
+import control.DataProvider;
 
 public class SizeFragment extends SherlockFragment implements
 		OnInfoWindowClickListener, LocationListener, OnClickListener,
@@ -39,6 +48,11 @@ public class SizeFragment extends SherlockFragment implements
 	private Location location;
 	private View mainView;
 	private Spinner spinner;
+	private double lat;
+	private double lon;
+	private double depth;
+	private double diam;
+	private Button button;
 
 	public static SizeFragment newInstance() {
 		SizeFragment frag = new SizeFragment();
@@ -46,6 +60,10 @@ public class SizeFragment extends SherlockFragment implements
 	}
 
 	private void findViews() {
+
+		button = (Button) mainView.findViewById(R.id.maptypebutton);
+		button.setOnClickListener(this);
+
 		mapVerified = false;
 
 		if (map == null) {
@@ -71,8 +89,9 @@ public class SizeFragment extends SherlockFragment implements
 					getActivity(), requestCode);
 			dialog.show();
 			mapVerified = false;
+			button.setVisibility(View.INVISIBLE);
 		} else { // Google Play Services are available
-
+			button.setVisibility(View.VISIBLE);
 			// Getting reference to the SupportMapFragment of activity_main.xml
 			SupportMapFragment fm = (SupportMapFragment) getActivity()
 					.getSupportFragmentManager().findFragmentById(R.id.map);
@@ -82,6 +101,7 @@ public class SizeFragment extends SherlockFragment implements
 
 			// Enabling MyLocation Layer of Google Map
 			map.setMyLocationEnabled(true);
+			map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
 			// Getting LocationManager object from System Service
 			// LOCATION_SERVICE
@@ -154,6 +174,7 @@ public class SizeFragment extends SherlockFragment implements
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	@Override
@@ -176,7 +197,17 @@ public class SizeFragment extends SherlockFragment implements
 
 	@Override
 	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.maptypebutton:
+			// Set mapy type to satellite if it's normal, switch back if it's
+			// satellite
+			map.setMapType(map.getMapType() == GoogleMap.MAP_TYPE_NORMAL ? GoogleMap.MAP_TYPE_SATELLITE
+					: GoogleMap.MAP_TYPE_NORMAL);
+			break;
 
+		default:
+			break;
+		}
 	}
 
 	@Override
@@ -187,8 +218,6 @@ public class SizeFragment extends SherlockFragment implements
 
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View v, int pos, long id) {
-		double lat = 1;
-		double lon = 1;
 
 		switch (pos) {
 		case 0:
@@ -245,15 +274,82 @@ public class SizeFragment extends SherlockFragment implements
 
 		}
 
-		CameraPosition camPos = new CameraPosition(new LatLng(lat, lon), 6,
-				map.getCameraPosition().tilt, map.getCameraPosition().bearing);
-		map.animateCamera(CameraUpdateFactory.newCameraPosition(camPos), 2000,
-				null);
+		postOverlay();
+
+	}
+
+	private void postOverlay() {
+
+		try {
+			depth = DataProvider.getImpactor().crDepth;
+			diam = DataProvider.getImpactor().crDiam;
+		} catch (Exception e) {
+			depth = 100;
+			diam = 100000;
+		}
+
+		// First time the spinner is selected, map might not be initialised
+		try {
+			MapsInitializer.initialize(getActivity().getApplicationContext());
+
+			BitmapDescriptor image = BitmapDescriptorFactory
+					.fromResource(R.drawable.craterimpact);
+
+			LatLngBounds bounds = getBounds();
+
+			// Adds a ground overlay with 50% transparency.
+			GroundOverlay groundOverlay = map
+					.addGroundOverlay(new GroundOverlayOptions().image(image)
+							.positionFromBounds(bounds).transparency(0.5f));
+
+			CameraPosition camPos = new CameraPosition(new LatLng(lat, lon), 6,
+					map.getCameraPosition().tilt,
+					map.getCameraPosition().bearing);
+			map.animateCamera(CameraUpdateFactory.newCameraPosition(camPos),
+					2000, null);
+
+		} catch (GooglePlayServicesNotAvailableException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
+	private LatLngBounds getBounds() {
+
+		LatLngBounds b = new LatLngBounds(getSECoord(lat, lon, diam),
+				getNECoord(lat, lon, diam));
+		return b;
+	}
+
+	double r = 6378137; // earth radius, sphere
+
+	// Converts meters to degrees LAT
+	private LatLng getSECoord(double lat, double lon, double length) {
+		double dn = -diam / 2;
+		double de = dn;
+
+		// Coordinate offsets in radians
+		double dLat = dn / r;
+		double dLon = de / (r * Math.cos(Math.PI * lat / 180));
+
+		return new LatLng(lat + dLat * 180 / Math.PI, 
+				lon + dLon * 180/ Math.PI);
+	}
+
+	private LatLng getNECoord(double lat, double lon, double length) {
+		double dn = diam / 2;
+		double de = dn;
+
+		// Coordinate offsets in radians
+		double dLat = dn / r;
+		double dLon = de / (r * Math.cos(Math.PI * lat / 180));
+
+		return new LatLng(lat + dLat * 180 / Math.PI, 
+				lon + dLon * 180/ Math.PI);
 	}
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
-		// TODO Auto-generated method stub
-
 	}
 }
