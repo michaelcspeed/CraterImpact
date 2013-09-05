@@ -4,8 +4,12 @@ import java.util.Locale;
 
 import org.holoeverywhere.app.Activity;
 import org.holoeverywhere.app.Dialog;
+import org.holoeverywhere.widget.AdapterView;
 import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.Spinner;
+
+import com.actionbarsherlock.internal.widget.IcsAdapterView;
+import com.actionbarsherlock.internal.widget.IcsAdapterView.OnItemSelectedListener;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -15,7 +19,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity implements OnClickListener,
+		org.holoeverywhere.widget.AdapterView.OnItemSelectedListener {
 
 	protected Dialog mSplashDialog;
 	private Spinner spinner1;
@@ -52,7 +57,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		//showSplashScreen();
+		// showSplashScreen();
 
 		setContentView(R.layout.activity_main);
 		findViews();
@@ -64,7 +69,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		spinner1 = (Spinner) findViewById(R.id.spinner1);
 		button1 = (Button) findViewById(R.id.button1);
 		imageView1 = (ImageView) findViewById(R.id.imageView1);
-
+		spinner1.setOnItemSelectedListener(this);
 		button1.setOnClickListener(this);
 	}
 
@@ -91,6 +96,27 @@ public class MainActivity extends Activity implements OnClickListener {
 		getBaseContext().getResources().updateConfiguration(config,
 				getBaseContext().getResources().getDisplayMetrics());
 
+	}
+
+	
+
+
+	@Override
+	public void onItemSelected(AdapterView<?> arg0, View arg1, int i,
+			long arg3) {
+		String[] languages = getResources().getStringArray(
+				R.array.languagesCodes);
+	
+		setLanguage(languages[i]);
+		
+		button1.setText(R.string.btStart);
+		
+	}
+
+	@Override
+	public void onNothingSelected(AdapterView<?> arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

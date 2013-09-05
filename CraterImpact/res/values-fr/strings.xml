@@ -157,6 +157,8 @@
 
 	<string name="damage1">Dégâts</string>
 	<string name="damage2"> à de l\'impact</string>
+	
+	<string name="fireball">Boule de Feu</string>
 
 
 	<string-array name="densities">

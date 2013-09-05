@@ -1,121 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">Calculadora de Impactos</string>
-<string name="btStart">Empezar</string>
-<string name="lblTitle">Calculadora de Impactos</string>
-<string name="lblLanguage">Idioma:</string>
-<string name="lblTranslation">Traducción:</string>
+	<string name="app_name">Calculadora de Impactos</string>
+	<string name="btStart">Empezar</string>
+	<string name="lblTitle">Calculadora de Impactos</string>
+	<string name="lblLanguage">Idioma:</string>
+	<string name="lblTranslation">Traducción:</string>
 
-<string name="cmdHelp">Ayuda</string>
-<string name="inputs">Parámetros de Inicio</string>
-<string name="result">Resultados del Cálculo</string>
+	<string name="cmdHelp">Ayuda</string>
+	<string name="inputs">Parámetros de Inicio</string>
+	<string name="result">Resultados del Cálculo</string>
 
-<string name="lblAstDiam">Diámetro del Asteroide</string>
-<string name="lblValue">Valor:</string>
-<string name="lblWater">Agua</string>
-<string name="lblSedRock">Roca Sedimentaria</string>
-<string name="lblIgRock">Roca Ígnea</string>
-<string name="lblIce">Hielo</string>
-<string name="lblPorRock">Roca Porosa</string>
-<string name="lblDensRock">Roca Densa</string>
-<string name="lblIron">Hierro</string>
+	<string name="lblAstDiam">Diámetro del Asteroide</string>
+	<string name="lblValue">Valor:</string>
+	<string name="lblWater">Agua</string>
+	<string name="lblSedRock">Roca Sedimentaria</string>
+	<string name="lblIgRock">Roca Ígnea</string>
+	<string name="lblIce">Hielo</string>
+	<string name="lblPorRock">Roca Porosa</string>
+	<string name="lblDensRock">Roca Densa</string>
+	<string name="lblIron">Hierro</string>
 
-<string name="txtWaterDepth">Profundidad del Agua (m) :</string>
-<string name="btSubmit">Calcular</string>
-<string name="lblObVelocity">Velocidad del Objeto</string>
+	<string name="txtWaterDepth">Profundidad del Agua (m) :</string>
+	<string name="btSubmit">Calcular</string>
+	<string name="lblObVelocity">Velocidad del Objeto</string>
 
-<string name="lblSelect">Por Favor Selecciona...</string>
-<string name="lblSphinx">Esfinge de Giza (20m)</string>
-<string name="lblBen">Big Ben (96m)</string>
-<string name="lblEiffel">Torre Eiffel (324m)</string>
-<string name="lblEmpireSt">Empire State Building (449m)</string>
-<string name="lblCN">CN Tower (553m)</string>
-<string name="lblBurj">Burj Dubai (~800m)</string>
+	<string name="lblSelect">Por Favor Selecciona...</string>
+	<string name="lblSphinx">Esfinge de Giza (20m)</string>
+	<string name="lblBen">Big Ben (96m)</string>
+	<string name="lblEiffel">Torre Eiffel (324m)</string>
+	<string name="lblEmpireSt">Empire State Building (449m)</string>
+	<string name="lblCN">CN Tower (553m)</string>
+	<string name="lblBurj">Burj Dubai (~800m)</string>
 
-<string name="lblImpactVal">Valores del Impacto</string>
-<string name="lblClickMap">Haz clic en el mapa para colocar el cráter...</string>
-<string name="cvsData">Ver Data</string>
-<string name="cvsSize">Tamaño del Cráter</string>
-<string name="cvsDepth">Profundidad del Cráter</string>
-<string name="btBack">Retroceder</string>
-<string name="btReset">Resetear</string>
-<string name="lbCrater">El cráter es demasiado pequeño ser visto</string>
+	<string name="lblImpactVal">Valores del Impacto</string>
+	<string name="lblClickMap">Haz clic en el mapa para colocar el cráter...
+	</string>
+	<string name="cvsData">Ver Data</string>
+	<string name="cvsSize">Tamaño del Cráter</string>
+	<string name="cvsDepth">Profundidad del Cráter</string>
+	<string name="btBack">Retroceder</string>
+	<string name="btReset">Resetear</string>
+	<string name="lbCrater">El cráter es demasiado pequeño ser visto</string>
 
-<string name="htParameter">Parámetro</string>
-<string name="htValue">Valor</string>
+	<string name="htParameter">Parámetro</string>
+	<string name="htValue">Valor</string>
 
-<string name="lblDistance">Distancia del lugar de impacto</string>
-<string name="lblInVals">Insertar Valores </string>
-<string name="pnlResults">Resultados del Cálculo</string>
-<string name="lblCrDepth">Profundidad Del Cráter</string>
-<string name="lblLandmark">Selecciona Punto de Referencia</string>
-<string name="lblImpEnergy">Energía del Impacto</string>
-<string name="lblWhatImpactor">¿Qué le sucede al impactor?</string>
-<string name="lblFireball">¿Se observa un bólido?</string>
+	<string name="lblDistance">Distancia del lugar de impacto</string>
+	<string name="lblInVals">Insertar Valores </string>
+	<string name="pnlResults">Resultados del Cálculo</string>
+	<string name="lblCrDepth">Profundidad Del Cráter</string>
+	<string name="lblLandmark">Selecciona Punto de Referencia</string>
+	<string name="lblImpEnergy">Energía del Impacto</string>
+	<string name="lblWhatImpactor">¿Qué le sucede al impactor?</string>
+	<string name="lblFireball">¿Se observa un bólido?</string>
 
-<string name="lbKE">Energía Cinética</string>
-<string name="lbImE">Energía del Impacto </string>
-<string name="lbImM">Masa</string>
-<string name="lbPjVel">Velocidad del Proyectil</string>
-<string name="lbPjAng">Ángulo De la Trayectoria</string>
-<string name="lbTgDens">Densidad del área impactada</string>
-<string name="lbPjDens">Densidad del Proyectil</string>
-<string name="lbCrDiam">Anchura del Cráter</string>
-<string name="lbCrDepth">Profundidad del Cráter</string>
-<string name="lbCrThickness">Grosor del material expulsado</string>
-<string name="lbAbBurst">Altitud de la Explosión</string>
-<string name="lbAbBreak">Altitud de la Desintegración</string>
-<string name="lbAbVel">Velocidad del Viento</string>
-<string name="lbAbRichter">Magnitud Escala Richter</string>
-<string name="lbAbAmpl">Amplitud del pulso de sonido </string>
-<string name="lbFbRad">Radio</string>
-<string name="lbFbDuration">Radiación termal máxima en</string>
-<string name="lbFbExp">Exposición</string>
-<string name="lbFbPeaktime">Duración de la irradiación</string>
-<string name="lbNoData">No aplicable</string>
-<string name="lbFreq">¿Con qué frecuencia?</string>
+	<string name="lbKE">Energía Cinética</string>
+	<string name="lbImE">Energía del Impacto </string>
+	<string name="lbImM">Masa</string>
+	<string name="lbPjVel">Velocidad del Proyectil</string>
+	<string name="lbPjAng">Ángulo De la Trayectoria</string>
+	<string name="lbTgDens">Densidad del área impactada</string>
+	<string name="lbPjDens">Densidad del Proyectil</string>
+	<string name="lbCrDiam">Anchura del Cráter</string>
+	<string name="lbCrDepth">Profundidad del Cráter</string>
+	<string name="lbCrThickness">Grosor del material expulsado</string>
+	<string name="lbAbBurst">Altitud de la Explosión</string>
+	<string name="lbAbBreak">Altitud de la Desintegración</string>
+	<string name="lbAbVel">Velocidad del Viento</string>
+	<string name="lbAbRichter">Magnitud Escala Richter</string>
+	<string name="lbAbAmpl">Amplitud del pulso de sonido </string>
+	<string name="lbFbRad">Radio</string>
+	<string name="lbFbDuration">Radiación termal máxima en</string>
+	<string name="lbFbExp">Exposición</string>
+	<string name="lbFbPeaktime">Duración de la irradiación</string>
+	<string name="lbNoData">No aplicable</string>
+	<string name="lbFreq">¿Con qué frecuencia?</string>
 
-<string name="lbAcknow">Reconocimientos</string>
-<string name="hide">Esconder</string>
-<string name="lbAuthor">Autor:</string>
-<string name="lbBased">Basado en el código original escrito por:</string>
+	<string name="lbAcknow">Reconocimientos</string>
+	<string name="hide">Esconder</string>
+	<string name="lbAuthor">Autor:</string>
+	<string name="lbBased">Basado en el código original escrito por:</string>
 
-<string name="projectile1">El proyectil aterriza intacto, con una velocidad de</string>
-<string name="projectile2">La energía perdida en la atmósfera es </string>
-<string name="projectile3">El proyectil empieza a desintegrarse a una altura de </string>
-<string name="projectile4">La velocidad de los fragmentos del proyectil después de la explosión es de</string>
-<string name="projectile5">La energía de la explosión en el aire es </string>
-<string name="projectile6">Los fragmentos grandes colisionan contra la superficie y pueden crear un campo cubierto de cráteres. Un estudio más cuidadoso de la entrada a la atmósfera es necesario para estimar con precisión la distribución del tamaño y frecuencia de los fragmentos del meteoro y así predecir el número y el tamaño de los cráteres formados.</string>
-<string name="projectile7">El proyectil llega a la tierra ya quebrado. La masa del proyectil colisiona la superficie con una velocidad de</string>
+	<string name="projectile1">El proyectil aterriza intacto, con una velocidad de
+	</string>
+	<string name="projectile2">La energía perdida en la atmósfera es </string>
+	<string name="projectile3">El proyectil empieza a desintegrarse a una altura
+		de </string>
+	<string name="projectile4">La velocidad de los fragmentos del proyectil
+		después de la explosión es de</string>
+	<string name="projectile5">La energía de la explosión en el aire es </string>
+	<string name="projectile6">Los fragmentos grandes colisionan contra la
+		superficie y pueden crear un campo cubierto de cráteres. Un estudio
+		más cuidadoso de la entrada a la atmósfera es necesario para estimar
+		con precisión la distribución del tamaño y frecuencia de los
+		fragmentos del meteoro y así predecir el número y el tamaño de los
+		cráteres formados.</string>
+	<string name="projectile7">El proyectil llega a la tierra ya quebrado. La masa
+		del proyectil colisiona la superficie con una velocidad de</string>
 
-<string name="expos1">La ropa se enciende</string>
-<string name="expos2">Gran parte del cuerpo sufre quemaduras de tercer grado</string>
-<string name="expos3">Gran parte del cuerpo sufre quemaduras de segundo grado</string>
-<string name="expos4">Gran parte del cuerpo sufre de quemaduras de primer grado</string>
-<string name="expos5">El periódico se enciende</string>
-<string name="expos6">El chapeado se inciende</string>
-<string name="expos7">Los árboles deciduos se encienden</string>
-<string name="expos8">El pasto se enciende</string>
+	<string name="expos1">La ropa se enciende</string>
+	<string name="expos2">Gran parte del cuerpo sufre quemaduras de tercer
+		grado</string>
+	<string name="expos3">Gran parte del cuerpo sufre quemaduras de segundo
+		grado</string>
+	<string name="expos4">Gran parte del cuerpo sufre de quemaduras de primer
+		grado</string>
+	<string name="expos5">El periódico se enciende</string>
+	<string name="expos6">El chapeado se inciende</string>
+	<string name="expos7">Los árboles deciduos se encienden</string>
+	<string name="expos8">El pasto se enciende</string>
 
-<string name="opress1">Los edificios de varios pisos soportados por muros maestros colapsarán</string>
-<string name="opress2">Los edificios de varios pisos soportados por muros maestros se agrietarán severamente y las particiones interiores se derrumbarán</string>
-<string name="opress3">Los edificios con marcos de madera se derrumbarán casi totalmente</string>
-<string name="opress4"> Las particiones interiores de los edificios con marcos de madera serán  derrumbadas. El techo se dañará gravemente.</string>
-<string name="opress5">Los edificios de multiples pisos de oficinas con marcos de acero sufrirían distorsiónes extremas en los marcos, los cuales estarían propensos a derrumbarse en cualquier momento</string>
-<string name="opress6">Los puentes pequeños se derrumbarán</string>
-<string name="opress7">Los puentes sufrirán distorsiones substanciales en las sus estructuras de soporte</string>
-<string name="opress8">Los puentes con marcos de acero se derrumbarán</string>
-<string name="opress9">Las ventanas de vidrio se romperán</string>
-<string name="opress10">Los coches y los camiones serán desplazados y torcidos fuertemente y requerirán ser reconstruidos en gran parte antes de ser utilizados</string>
-<string name="opress11">Los coches y camiones serán revolcados y desplazados, requeriendo reparaciones importantes</string>
-<string name="opress12"> Ningún daño significativo causado por la onda de la ráfaga atmosférica </string>
-<string name="opress13">Hasta un 90 por ciento de árboles serán derribados; el resto será despojado de ramas y hojas</string>
-<string name="opress14">Cerca de un 30 por ciento de los árboles serán derribados; el resto tendrán  algunas ramas y hojas desprendidas</string>
+	<string name="opress1">Los edificios de varios pisos soportados por muros
+		maestros colapsarán</string>
+	<string name="opress2">Los edificios de varios pisos soportados por muros
+		maestros se agrietarán severamente y las particiones interiores se
+		derrumbarán</string>
+	<string name="opress3">Los edificios con marcos de madera se derrumbarán
+		casi totalmente</string>
+	<string name="opress4"> Las particiones interiores de los edificios con
+		marcos de madera serán derrumbadas. El techo se dañará gravemente.
+	</string>
+	<string name="opress5">Los edificios de multiples pisos de oficinas con
+		marcos de acero sufrirían distorsiónes extremas en los marcos, los
+		cuales estarían propensos a derrumbarse en cualquier momento</string>
+	<string name="opress6">Los puentes pequeños se derrumbarán</string>
+	<string name="opress7">Los puentes sufrirán distorsiones substanciales en
+		las sus estructuras de soporte</string>
+	<string name="opress8">Los puentes con marcos de acero se derrumbarán
+	</string>
+	<string name="opress9">Las ventanas de vidrio se romperán</string>
+	<string name="opress10">Los coches y los camiones serán desplazados y
+		torcidos fuertemente y requerirán ser reconstruidos en gran parte
+		antes de ser utilizados</string>
+	<string name="opress11">Los coches y camiones serán revolcados y
+		desplazados, requeriendo reparaciones importantes</string>
+	<string name="opress12"> Ningún daño significativo causado por la onda de
+		la ráfaga atmosférica </string>
+	<string name="opress13">Hasta un 90 por ciento de árboles serán derribados;
+		el resto será despojado de ramas y hojas</string>
+	<string name="opress14">Cerca de un 30 por ciento de los árboles serán
+		derribados; el resto tendrán algunas ramas y hojas desprendidas
+	</string>
 
-<string name="incrater">Estás parado dentro del cráter</string>
+	<string name="incrater">Estás parado dentro del cráter</string>
 
-<string name="damage1">Daños</string>
-<string name="damage2"> a del area de desplome</string>
+	<string name="damage1">Daños</string>
+	<string name="damage2"> a del area de desplome</string>
+	<string name="fireball">Bola de Fuego</string>
 
 	<string-array name="densities">
 		<item>Hielo</item>
@@ -136,7 +167,7 @@
 		<item>CN Tower (553m)</item>
 		<item>Burj Dubai (~800m)</item>
 	</string-array>
-	
+
 	<string-array name="cities">
 		<item>Cardiff, Wales</item>
 		<item>London, England</item>
@@ -149,7 +180,7 @@
 		<item>Bosumtwi, Ghana</item>
 		<item>Karakul, Tajikstan</item>
 	</string-array>
-	
+
 
 </resources>
 

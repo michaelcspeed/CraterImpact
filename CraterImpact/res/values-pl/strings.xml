@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <string name="app_name">Kalkulator zderzenia</string>
-<string name="btStart">Start</string>
+<string name="btStart">Rozpocząć</string>
 <string name="lblTitle">Kalkulator zderzenia</string>
 <string name="lblLanguage">Język:</string>
 
@@ -134,7 +134,7 @@
 
 <string name="damage1">Zniszczenia</string>
 <string name="damage2">od miejsca upadku</string>
-
+	<string name="fireball">Piorun Kulisty</string>
 
 	<string-array name="densities">
 		<item>Lód</item>

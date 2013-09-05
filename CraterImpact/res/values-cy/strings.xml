@@ -152,6 +152,7 @@
 
 	<string name="damage1">Difrod</string>
 	<string name="damage2"> o safle’r gwrthdrawiad</string>
+	<string name="fireball">Pelen dân</string>
 
 	<string-array name="densities">
 		<item>Iâ</item>
