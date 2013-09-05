@@ -58,6 +58,7 @@ public class DepthFragment extends SherlockFragment implements
 
 		findViews();
 
+		canvasView.changeBuilding(0);
 
 		return mainView;
 

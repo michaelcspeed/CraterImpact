@@ -23,6 +23,7 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	private ImageView imageProjectile;
 	private LayoutParams params;
 	private SharedPreferences prefs;
+	Long l = 7500l;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -56,7 +57,7 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	@Override
 	public void onClick(View v) {
 		if (v == buttonNext) {
-			Long l = (long) seekBarProjectileSize.getProgress();
+			
 			prefs.edit().putLong(Globals.diameterKey, l).commit();
 			Intent intent = new Intent(this, ObjectVelocityActivity.class);
 			startActivity(intent);
@@ -67,6 +68,7 @@ public class ObjectSizeActivity extends Activity implements OnClickListener,
 	public void onProgressChanged(SeekBar arg0, int progressNo, boolean arg2) {
 
 		progressNo *= 100;
+		l = (long) progressNo;
 
 		if (progressNo == 0)
 			progressNo = 100;
