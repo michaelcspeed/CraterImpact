@@ -28,6 +28,8 @@ public class FireballActivity extends ListActivity {
 		String rad = fire.get(getString(R.string.lbFbRad));
 		String dur = fire.get(getString(R.string.lbFbDuration));
 		String peak = fire.get(getString(R.string.lbFbPeaktime));
+		
+		rad = rad.replace(".0</sup>", "</sup>");
 
 		// check for nulls here too. putting a dash in if there is no fireball
 		items.add(new ParameterAndValueObject(getString(R.string.lbFbRad),

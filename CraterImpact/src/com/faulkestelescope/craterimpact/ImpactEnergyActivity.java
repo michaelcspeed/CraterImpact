@@ -28,10 +28,15 @@ public class ImpactEnergyActivity extends ListActivity {
 		String ke = inputs.get(getString(R.string.lbKE));
 		String ime = inputs.get(getString(R.string.lbImE));
 		String freq = inputs.get(getString(R.string.lbFreq));
+		
+		ke = ke.replace(".0</sup>", "</sup>");
+		ime = ime.replace(".0</sup>", "</sup>");
+		
 		items.add(new ParameterAndValueObject(getString(R.string.lbKE), ke));
 		items.add(new ParameterAndValueObject(getString(R.string.lbImE), ime));
 		items.add(new ParameterAndValueObject(getString(R.string.lbFreq), freq));
 
+		
 		LayoutInflater inflater = getLayoutInflater();
 		ViewGroup header = (ViewGroup) inflater.inflate(
 				R.layout.input_values_list_item, getListView(), false);

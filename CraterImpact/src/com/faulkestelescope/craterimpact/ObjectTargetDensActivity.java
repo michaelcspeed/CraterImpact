@@ -66,6 +66,8 @@ public class ObjectTargetDensActivity extends Activity implements
 		windowWidth = disp.widthPixels;
 
 		findViews();
+		
+		spinner1.setSelection(1);
 
 	}
 
@@ -84,6 +86,7 @@ public class ObjectTargetDensActivity extends Activity implements
 		buttonNext.setOnClickListener(this);
 		spinner1.setOnItemSelectedListener(this);
 		waterLevelSlider.setOnSeekBarChangeListener(this);
+		
 
 	}
 

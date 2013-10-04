@@ -44,6 +44,9 @@ public class InputActivity extends ListActivity {
 		String pjdens = inputs.get(getString(R.string.lbPjDens));
 		String tgdens = inputs.get(getString(R.string.lbTgDens));
 		String fbrad = fire.get(getString(R.string.lbFbRad));
+		
+		imm = imm.replace(".0</sup>", "</sup>");
+		fbrad = fbrad.replace(".0</sup>", "</sup>");
 
 		items.add(new ParameterAndValueObject(getResources().getString(
 				R.string.lbImM), imm));

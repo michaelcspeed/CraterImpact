@@ -2,7 +2,6 @@ package com.faulkestelescope.craterimpact;
 
 import org.holoeverywhere.widget.AdapterView;
 import org.holoeverywhere.widget.AdapterView.OnItemSelectedListener;
-import org.holoeverywhere.widget.Button;
 import org.holoeverywhere.widget.Spinner;
 
 import android.app.Dialog;
@@ -15,6 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
@@ -24,6 +25,7 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
+import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptor;
@@ -39,7 +41,7 @@ import control.DataProvider;
 
 public class SizeFragment extends SherlockFragment implements
 		OnInfoWindowClickListener, LocationListener, OnClickListener,
-		OnItemSelectedListener {
+		OnItemSelectedListener, OnMapClickListener {
 
 	private GoogleMap map;
 	private boolean mapVerified;
@@ -52,7 +54,8 @@ public class SizeFragment extends SherlockFragment implements
 	private double lon;
 	private double depth;
 	private double diam;
-	private Button button;
+	private ImageButton button;
+	private GroundOverlay groundOverlay;
 
 	public static SizeFragment newInstance() {
 		SizeFragment frag = new SizeFragment();
@@ -61,7 +64,7 @@ public class SizeFragment extends SherlockFragment implements
 
 	private void findViews() {
 
-		button = (Button) mainView.findViewById(R.id.maptypebutton);
+		button = (ImageButton) mainView.findViewById(R.id.maptypebutton);
 		button.setOnClickListener(this);
 
 		mapVerified = false;
@@ -73,6 +76,7 @@ public class SizeFragment extends SherlockFragment implements
 			// Check if we were successful in obtaining the map.
 			if (map != null) {
 				mapVerified = true;
+				map.setOnMapClickListener(this);
 			}
 		}
 
@@ -297,8 +301,12 @@ public class SizeFragment extends SherlockFragment implements
 
 			LatLngBounds bounds = getBounds();
 
+			// deletes last ground overlay. It'll be null the first time around
+			if (groundOverlay != null)
+				groundOverlay.remove();
+
 			// Adds a ground overlay with 50% transparency.
-			GroundOverlay groundOverlay = map
+			groundOverlay = map
 					.addGroundOverlay(new GroundOverlayOptions().image(image)
 							.positionFromBounds(bounds).transparency(0.5f));
 
@@ -333,8 +341,8 @@ public class SizeFragment extends SherlockFragment implements
 		double dLat = dn / r;
 		double dLon = de / (r * Math.cos(Math.PI * lat / 180));
 
-		return new LatLng(lat + dLat * 180 / Math.PI, 
-				lon + dLon * 180/ Math.PI);
+		return new LatLng(lat + dLat * 180 / Math.PI, lon + dLon * 180
+				/ Math.PI);
 	}
 
 	private LatLng getNECoord(double lat, double lon, double length) {
@@ -345,11 +353,18 @@ public class SizeFragment extends SherlockFragment implements
 		double dLat = dn / r;
 		double dLon = de / (r * Math.cos(Math.PI * lat / 180));
 
-		return new LatLng(lat + dLat * 180 / Math.PI, 
-				lon + dLon * 180/ Math.PI);
+		return new LatLng(lat + dLat * 180 / Math.PI, lon + dLon * 180
+				/ Math.PI);
 	}
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
+	}
+
+	@Override
+	public void onMapClick(LatLng point) {
+		lat = point.latitude;
+		lon = point.longitude;
+		postOverlay();
 	}
 }
