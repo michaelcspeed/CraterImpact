@@ -6,8 +6,9 @@ Crater Impact is an Android app for calulating crater sizes under many different
 
 APK here: https://github.com/michaelcspeed/CraterImpact/blob/master/CraterImpact/bin/CraterImpact.apk
 
-![Screenshot](https://imgur.com/QgEiiuc =250x)
-![ScreenShot](https://imgur.com/h7mdd7t =250x)
-![ScreenShot](https://imgur.com/5fyGicn =250x)
-![ScreenShot](https://imgur.com/sHXSFEB =250x)
-![ScreenShot](https://imgur.com/DjRbH5P =250x)
+<img src="https://imgur.com/QgEiiuc.png" width="200px"/>
+
+![ScreenShot](https://imgur.com/h7mdd7t.png =250x)
+![ScreenShot](https://imgur.com/5fyGicn.png =250x)
+![ScreenShot](https://imgur.com/sHXSFEB.png =250x)
+![ScreenShot](https://imgur.com/DjRbH5P.png =250x)
