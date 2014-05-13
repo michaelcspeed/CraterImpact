@@ -8,7 +8,10 @@ APK here: https://github.com/michaelcspeed/CraterImpact/blob/master/CraterImpact
 
 <img src="https://imgur.com/QgEiiuc.png" width="200px"/>
 
-![ScreenShot](https://imgur.com/h7mdd7t.png =250x)
-![ScreenShot](https://imgur.com/5fyGicn.png =250x)
-![ScreenShot](https://imgur.com/sHXSFEB.png =250x)
-![ScreenShot](https://imgur.com/DjRbH5P.png =250x)
+<img src="https://imgur.com/h7mdd7t.png" width="200px"/>
+
+<img src="https://imgur.com/5fyGicn.png" width="200px"/>
+
+<img src="https://imgur.com/sHXSFEB.png" width="200px"/>
+
+<img src="https://imgur.com/DjRbH5P.png" width="200px"/>
